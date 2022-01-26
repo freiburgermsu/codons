@@ -1,0 +1,23 @@
+{
+    "TTT":"phenylalanine", "TTC":"phenylalanine",
+    "TTA":"leucine", "TTG":"leucine", "CTT":"leucine", "CTC":"leucine", "CTA":"leucine", "CTG":"leucine",
+    "ATT":"isoleucine", "ATC":"isoleucine", "ATA":"isoleucine",
+    "ATG":"methionine",
+    "GTT":"valine", "GTC":"valine", "GTA":"valine", "GTG":"valine",
+    "TCT":"serine", "TCC":"serine", "TCA":"serine", "TCG":"serine", "AGT":"serine", "AGC":"serine",
+    "CCT":"proline", "CCC":"proline", "CCA":"proline", "CCG":"proline",
+    "ACT":"threonine", "ACC":"threonine", "ACA":"threonine", "ACG":"threonine",
+    "GCT":"alanine", "GCC":"alanine", "GCA":"alanine", "GCG":"alanine",
+    "TAT":"tyrosine", "TAC":"tyrosine", 
+    "CAT":"histidine", "CAC":"histidine",
+    "CAA":"glutamine", "CAG":"glutamine",
+    "AAT":"asparagine", "AAC":"asparagine",
+    "AAA":"lysine", "AAG":"lysine",
+    "GAT":"aspartic acid", "GAC":"aspartic acid",
+    "GAA":"glutamic acid", "GAG":"glutamic acid",
+    "TGT":"cysteine", "TGC":"cysteine",
+    "TGG":"tryptophan",
+    "CGT":"arginine", "CGC":"arginine", "CGA":"arginine", "CGG":"arginine", "AGA":"arginine", "AGG":"arginine", 
+    "GGT":"glycine", "GGC":"glycine", "GGA":"glycine", "GGG":"glycine",
+    "TAA":"stop", "TAG":"stop", "TGA":"stop"
+}
