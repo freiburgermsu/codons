@@ -30,8 +30,6 @@ The following command installs ``Codons`` in a command prompt/terminal environme
 
 _________________
 
-ChemMW
-++++++++++++++++++
 
 +++++++++++
 __init__

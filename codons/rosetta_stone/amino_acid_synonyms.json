@@ -15,10 +15,6 @@
         "three_letter": "asp",
         "one_letter": "D"
     },
-    "asparagine": {
-        "three_letter": "asx",
-        "one_letter": "B"
-    },
     "cysteine": {
         "three_letter": "cys",
         "one_letter": "C"
@@ -28,8 +24,8 @@
         "one_letter": "E"
     },
     "glutamine": {
-        "three_letter": "glx",
-        "one_letter": "Z"
+        "three_letter": "gln",
+        "one_letter": "Q"
     },
     "glycine": {
         "three_letter": "gly",

@@ -1,1 +1,1 @@
-from .translate import *
+from .genes import *
