@@ -275,7 +275,7 @@ class Codons():
         # export the genetic and protein sequences
         self.paths['genetic_sequence'] = os.path.join(export_path, 'genetic_sequence.fasta')
         with open(self.paths['genetic_sequence'], 'w') as genes:
-            genes.write(self.make_fasta(self.sequence))
+            genes.write(self.make_fasta(self.sequence, ' - '.join(['Genetic_sequence', f'{len(self.sequence)}_bps'])))
             
         if self.proteins != {}:
             self.paths['protein_sequence'] = os.path.join(export_path, 'protein_sequence.fasta')
@@ -295,6 +295,6 @@ class Codons():
         if self.nucleotide_blast_results:
             self.paths['nucleotide_blast_results'] = os.path.join(export_path, 'nucleotide_blast_results.xml')
             with open(self.paths['nucleotide_blast_results'], 'w') as protein_data:
-                protein_data.write(self.nucleotide_blast_results.read())
+                protein_data.write(self.nucleotide_blast_results)
                 
                  
