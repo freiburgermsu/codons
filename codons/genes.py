@@ -67,8 +67,8 @@ class Codons():
                  ):
         self.verbose = verbose
         self.printing = printing
-        self.proteins = {}
         self.fasta = []
+        self.proteins = {}
         self.transcribed_sequence = None
         self.protein_blast_results = None
         self.nucleotide_blast_results = None
@@ -137,22 +137,21 @@ class Codons():
                 break
             
         # substitute the nucleotides with the appropriate capitalization
-        transcription = 'Transcribed sequence '
+        self.transcription = 'DNA_to_RNA'
         if re.search('u|U', self.sequence):
-            transcription += 'RNA to DNA'
+            self.transcription = 'RNA_to_DNA'
             if upper_case:
                 self.transcribed_sequence = re.sub('U', 'T', self.sequence)
             else:
                 self.transcribed_sequence = re.sub('u', 't', self.sequence)
         if re.search('t|T', self.sequence):
-            transcription += 'DNA to RNA'
             if upper_case:
                 self.transcribed_sequence = re.sub('T', 'U', self.sequence)
             else:
                 self.transcribed_sequence = re.sub('t', 'u', self.sequence)
                 
         print('The sequence is transcribed.')
-        self.transcribed_sequence = f'>{transcription}\n{self.transcribed_sequence}*\n'
+        self.transcribed_sequence = f'>Transcribed sequence from {self.transcription}\n{self.transcribed_sequence}*\n'
         return self.transcribed_sequence
         
         
@@ -183,7 +182,7 @@ class Codons():
                                 mass = self.protein_mass.mass(protein)
                                 
                                 self.proteins[protein] = mass
-                                description = ' - '.join(['>Protein', description, f'{len(protein)}residues', f'{mass}amu'])
+                                description = ' - '.join(['Protein', f'{len(protein)}_residues', f'{mass}_amu'])
                                 fasta_file = self.make_fasta(description, protein)
                                 self.multi_fasta.append(fasta_file)
                                 amino_acids = None
@@ -212,7 +211,7 @@ class Codons():
             self.multi_fasta = self.make_fasta(sequence) 
             
         # estimate the completion time
-        estimated_time = datetime.datetime.now()+datetime.timedelta(seconds = len(self.multi_fasta)*3)    # approximately one second per amino acid   
+        estimated_time = datetime.datetime.now()+datetime.timedelta(seconds = len(self.multi_fasta)/5)    # approximately one second per amino acid   
         print(f'The database search for the parameterized protein(s) will complete circa {estimated_time}.')
         
         # acquire the BLAST results
@@ -238,7 +237,7 @@ class Codons():
             nucleotide_blast_result = NCBIWWW.qblast('blastn', database, self.sequence)
             self.nucleotide_blast_results.append(nucleotide_blast_result)
             
-        self.nucleotide_blast_results = '\n\n'.join(self.nucleotide_blast_results)
+        self.nucleotide_blast_results = '\n\n'.join(self.nucleotide_blast_results.read())
                 
     def export(self, export_name = None, export_directory = None):
         # define the simulation_path
@@ -252,11 +251,12 @@ class Codons():
         translation = ''
         transcription = ''
         ending = ''
-        if self.proteins != []:
+        if self.proteins != {}:
             translation = 'translation'
             ending = f'-{len(self.proteins)}_proteins'
         if self.transcribed_sequence:
             transcription = 'transcription'
+            ending = f'-{self.transcription}'
         if export_name is None:
             export_name = '-'.join([re.sub(' ', '_', str(x)) for x in [datetime.date.today(), 'codons', translation, transcription]])
         export_name += ending
@@ -277,7 +277,7 @@ class Codons():
         with open(self.paths['genetic_sequence'], 'w') as genes:
             genes.write(self.make_fasta(self.sequence))
             
-        if self.proteins != []:
+        if self.proteins != {}:
             self.paths['protein_sequence'] = os.path.join(export_path, 'protein_sequence.fasta')
             with open(self.paths['protein_sequence'], 'w') as proteins:
                 proteins.write(self.multi_fasta)
