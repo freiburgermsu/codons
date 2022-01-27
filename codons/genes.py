@@ -183,7 +183,7 @@ class Codons():
                                 
                                 self.proteins[protein] = mass
                                 description = ' - '.join(['Protein', f'{len(protein)}_residues', f'{mass}_amu'])
-                                fasta_file = self.make_fasta(description, protein)
+                                fasta_file = self.make_fasta(protein, description)
                                 self.multi_fasta.append(fasta_file)
                                 amino_acids = None
                         else:
@@ -226,7 +226,7 @@ class Codons():
             self.sequence = sequence 
             
         # estimate the completion time
-        estimated_time = datetime.datetime.now()+datetime.timedelta(seconds = len(self.sequence)/10)    # approximately one second per nucleic acid
+        estimated_time = datetime.datetime.now()+datetime.timedelta(seconds = len(self.sequence)/12)    # approximately one second per nucleic acid
         print(f'The database search for the parameterized protein(s) will complete circa {estimated_time}.')
         
         # acquire the BLAST results
@@ -235,9 +235,9 @@ class Codons():
         sequence_sections = [sequence[i:i+section_size] for i in range(0, sections, section_size)]
         for sequence in sequence_sections:
             nucleotide_blast_result = NCBIWWW.qblast('blastn', database, self.sequence)
-            self.nucleotide_blast_results.append(nucleotide_blast_result)
+            self.nucleotide_blast_results.append(nucleotide_blast_result.read())
             
-        self.nucleotide_blast_results = '\n\n'.join(self.nucleotide_blast_results.read())
+        self.nucleotide_blast_results = '\n\n'.join(self.nucleotide_blast_results)
                 
     def export(self, export_name = None, export_directory = None):
         # define the simulation_path
