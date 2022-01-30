@@ -75,6 +75,19 @@ A genetic sequence is translated into a FASTA-formatted sequence of amino acids 
 - *description* ``str``: A description of the genetic seqeuence that will be added to the FASTA-formatted output of the function. 
 
 
+++++++++++++++++
+make_fasta()
+++++++++++++++++
+
+A simple function that returns, and optionally exports, a FASTA-formatted file from the parameterized description and sequence:
+
+.. code-block:: python
+
+ cd.make_fasta(sequence, description = 'sequence', export_path = None):
+
+- *sequence* ``str``: The genetic or protein seqeuence that will constitute the FASTA file. 
+- *description* ``str``: A description of the seqeuence that will be the first line of the FASTA file. 
+- *export_path* ``str``: The path to which the FASTA file will be exported, where ``None`` specifies that the file will not be exported.
 
 ++++++++++++++++
 blast_protein()
