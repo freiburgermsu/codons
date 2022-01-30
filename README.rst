@@ -56,10 +56,12 @@ A genetic sequence is converted from DNA -> RNA, or RNA -> DNA, where the direct
 
 .. code-block:: python
 
- cd.transcribe(sequence = None, description = '')
+ transcribed_sequence = cd.transcribe(sequence = None, description = '')
 
 - *sequence* ``str``: The genetic seqeuence that will be transcribed. The sequence is case-insensitive, and can even possess line numbers or column-spaces, which the code ignores. The absence of a passed sequence executes the sequence that is loaded into the ``Codons`` object.
 - *description* ``str``: A description of the genetic seqeuence that will be added to the FASTA-formatted output of the function. 
+
+**Return**: *transcribed_sequence* ``str``: The translated sequence as a single string.
 
 ++++++++++++++++
 translate()
@@ -69,11 +71,12 @@ A genetic sequence is translated into a FASTA-formatted sequence of amino acids 
 
 .. code-block:: python
 
- cd.translate(sequence = None, description = '')
+ proteins = cd.translate(sequence = None, description = '')
 
 - *sequence* ``str``: The genetic seqeuence, of either DNA or RNA, that will be parsed and translated into a protein sequence. The sequence is case-insensitive, and can even possess line numbers or column-spaces, which the code ignores. The absence of a passed sequence executes the sequence that is loaded into the ``Codons`` object.
 - *description* ``str``: A description of the genetic seqeuence that will be added to the FASTA-formatted output of the function. 
 
+**Return**: *proteins* ``dict``: A dictionary of the proteins, where the key is the one-letter protein sequence and the value is the mass of the respective sequence.
 
 ++++++++++++++++
 make_fasta()
@@ -83,7 +86,7 @@ A simple function that returns, and optionally exports, a FASTA-formatted file f
 
 .. code-block:: python
 
- cd.make_fasta(sequence, description = 'sequence', export_path = None):
+ fasta_file = cd.make_fasta(sequence, description = 'sequence', export_path = None):
 
 - *sequence* ``str``: The genetic or protein seqeuence that will constitute the FASTA file. 
 - *description* ``str``: A description of the seqeuence that will be the first line of the FASTA file. 
