@@ -19,5 +19,5 @@ setup(
   author_email = 'andrewfreiburger@gmail.com',
   url = 'https://github.com/freiburgermsu/codons',   
   keywords = ['chemistry', 'biology', 'dogma', 'nucleic', 'acids', 'amino', 'translation', 'molecular', 'genetics'],
-#  install_requires = ['chemicals', 'pandas']
+  install_requires = ['scipy', 'Bio', 'chemw>0.2.0']
 )
