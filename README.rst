@@ -1,4 +1,4 @@
-Translating Genetic Sequences into Protein sequences 
+Translating, Transcribing, and Investigating Genetic Sequences and their corresponding Proteins 
 --------------------------------------------------------------------------------------------------------
 
 |PyPI version| |Actions Status| |Downloads| |License|
@@ -40,39 +40,84 @@ The data environment, in a `Python IDE <https://www.simplilearn.com/tutorials/py
 .. code-block:: python
 
   import codons
-  cd = codons.Codons(codons_table = 'standard', amino_acids_form = 'full_name', hyphenated = None)
+  cd = codons.Codons(sequence = None, codons_table = 'standard', amino_acids_form = 'full_name', hyphenated = None, verbose = False, printing = True)
 
+- *sequence* ``str``: specifies the genetic sequence that will be processed through subsequent functions, which can alternatively be provided in each function ad hoc.
 - *codons_table* ``str``: specifies the framework for translating codons into amino acids, where the `standard translation table <https://en.wikipedia.org/wiki/DNA_and_RNA_codon_tables>`_ is used by default.
 - *amino_acids_form* ``str``: specifies whether the amino acid ``full_name``, ``three_letter``, or ``one_letter`` nomenclature will be used in the protein sequence. 
 - *hyphenated* ``bool``: specifies whether amino acid residues of the protein sequence are delimited by hyphens, where ``None`` defaults to ``True`` for ``amino_acids_for = full_name`` and ``amino_acids_for = three_letter`` and ``False`` for ``amino_acids_for = one_letter``.
+- *verbose* & *printing* ``bool``: specifies whether troubleshooting information or MW results will be printed, respectively.
+
+++++++++++++++++
+transcribe()
+++++++++++++++++
+
+A genetic sequence is converted from DNA -> RNA, or RNA -> DNA, where the directionality of the conversion is automatically listed in the FASTA description:
+
+.. code-block:: python
+
+ cd.transcribe(sequence = None, description = '')
+
+- *sequence* ``str``: The genetic seqeuence that will be transcribed. The sequence is case-insensitive, and can even possess line numbers or column-spaces, which the code ignores. The absence of a passed sequence executes the sequence that is loaded into the ``Codons`` object.
+- *description* ``str``: A description of the genetic seqeuence that will be added to the FASTA-formatted output of the function. 
 
 ++++++++++++++++
 translate()
 ++++++++++++++++
 
-The parameterized data is fitted to the Hill equation, with the following arguments and their default values:
+A genetic sequence is translated into a FASTA-formatted sequence of amino acids for each protein that is coded by the genetic code:
 
 .. code-block:: python
 
- cd.translate(sequence)
+ cd.translate(sequence = None, description = '')
 
-- *sequence* ``str``: The genetic seqeuence, of either DNA or RNA, that wil lbe parsed and translated into a protein sequence. The sequence is case-insensitive, and can even possess line numbers or column-spaces, which the code ignores. 
+- *sequence* ``str``: The genetic seqeuence, of either DNA or RNA, that will be parsed and translated into a protein sequence. The sequence is case-insensitive, and can even possess line numbers or column-spaces, which the code ignores. The absence of a passed sequence executes the sequence that is loaded into the ``Codons`` object.
+- *description* ``str``: A description of the genetic seqeuence that will be added to the FASTA-formatted output of the function. 
+
+
+
+++++++++++++++++
+blast_protein()
+++++++++++++++++
+
+A protein sequence or a FASTA-formatted file of protein sequences is searched in through the `BLAST database <https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&BLAST_SPEC=&LINK_LOC=blasttab&LAST_PAGE=blastn>`_ of the NIH for information about the protein(s):
+
+.. code-block:: python
+
+ cd.blast_protein(sequence = None, database = 'nr', )
+
+- *sequence* ``str``: The genetic seqeuence, of either DNA or RNA, that will be parsed and translated into a protein sequence. The sequence is case-insensitive, and can even possess line numbers or column-spaces, which the code ignores. The absence of a passed sequence executes the sequence that is loaded into the ``Codons`` object.
+- *database* ``str``: The BLAST database that will be searched for the protein sequence. Permissible options include: ``nr``, ``refseq_select``, ``refseq_protein``, ``landmark``, ``swissprot``, ``pataa``, ``pdb``, ``env_nr``, ``tsa_nr``.
+- *export_name* & *export_directory* ``str``: The name of the folder and directory to which the scraped BLAST data will be saved in a file: ``nucleotide_blast_results.xml``. The ``None`` values enable the code to construct a unique folder name that describes the contents and saves it to the current working directory.
+
+
+++++++++++++++++++++++++++++
+blast_nucleotide()
+++++++++++++++++++++++++++++
+
+A genetic sequence is translated into a FASTA-formatted sequence of amino acids for each protein that is coded by the genetic code:
+
+.. code-block:: python
+
+ cd.translate(sequence = None, database= 'nt', export_name = None, export_directory = None)
+
+- *sequence* ``str``: The genetic seqeuence, of either DNA or RNA, that will be parsed and translated into a protein sequence. The sequence is case-insensitive, and can even possess line numbers or column-spaces, which the code ignores. The absence of a passed sequence executes the sequence that is loaded into the ``Codons`` object.
+- *database* ``str``: The BLAST database that will be searched for the nucleotide sequence. Permissible options include: ``nr``, ``nt``, ``refseq_select``, ``refseq_rna``, ``refseq_representative_genomes``, ``wgs``, ``refseq_genomes``, ``est``, ``SRA``, ``TSA``, ``HTGS``, ``pat``, ``pdb``, ``RefSeq_Gene``, ``gss``, ``dbsts``.
+- *export_name* & *export_directory* ``str``: The name of the folder and directory to which the scraped BLAST data will be saved in a file: ``protein_blast_results.xml``. The ``None`` values enable the code to construct a unique folder name that describes the contents and saves it to the current working directory.
 
 
 ++++++++++++++++
 export()
 ++++++++++++++++
 
-The genetic sequence and the corresponding protein sequence are exported:
+The genetic sequence and any corresponding protein or nucleotide content from the aforementioned functions, which reside in the ``Codons`` object, are exported:
 
 .. code-block:: python
 
  cd.export(export_name = None, export_directory = None)
 
-
+- *export_name* ``str``: optionally specifies a name for the folder of exported content, where `None` enables the code to design a unique folder name for simulation and descriptive tags of the contents.
 - *export_directory* ``str``: optionally specifies a path to where the content will be exported, where `None` selects the current working directory.
-- *export_name* ``str``: optionally specifies a name for the folder of exported content, where `None` enables the code to design a unique folder name for simulation.
-
 
 ++++++++++++++++++++++++++
 Accessible content
@@ -80,10 +125,15 @@ Accessible content
 The ``Codons`` object retains numerous components that are accessible to the user: 
 
 - *proteins* ``list``: A list of the protein sequences that are generated by the parameterized genetic sequence.
+- *multi_fasta* ``str``: The assembled FASTA-formatted file for the translated proteins from a parameterized sequence.
+- *protein_mass* ``dict``: A collection of the protein sequences and their respective masses, in a key-value pairing, that were discovered in the ``translate()`` function.
+- *transcribed_sequence* & *sequence* ``str``: The transcribed genetic sequence from the ``transcription()`` function, and the genetical sequence that is used in any of the ``Codons`` functions.
 - *amino_acid_synonyms* ``dict``: The synonyms for each amino acid, with keys of the full amino acid name.
-- *codons_table* ``dict``: The translation table between genetic codons and amion acid residues, which is accessed with case-insensitivity.
+- *codons_table* & *changed_codons* ``dict``: The translation table between genetic codons and amion acid residues, which is accessed with case-insensitivity, and the translation conversions that were changed based upon the user's specification.
+- *missed_codons* ``dict``: A collections of the codons that were parsed yet never matched with a ``codons_table`` key.
 - *paths* & *parameters* ``dict``: Collections of the paths and parameters are are defined for the simulation.
-
+- *export_path* ``str``: The complete export path for the ``Codons`` contents.
+- *protein_blast_results* & *nucleotide_blast_results* ``str``: The BLAST search results for the passed proteins and nucleotides, respectively.
 
 Execution
 +++++++++++
@@ -93,6 +143,6 @@ Codons is executed through the following sequence of the aforementioned function
 .. code-block:: python
 
    import codons
-   cd = codons.Codons(codons_table = 'standard', amino_acids_form = 'full_name', hyphenated = None)
-   cd.translate(sequence)
+   cd = codons.Codons(sequence = None, codons_table = 'standard', amino_acids_form = 'full_name', hyphenated = None, verbose = False, printing = True)
+   # < insert Codons function(s) > 
    cd.export(export_name = None, export_directory = None)
