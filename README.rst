@@ -7,7 +7,7 @@ Translating, Transcribing, and Investigating Genetic Sequences and their corresp
    :target: https://pypi.org/project/codons/
    :alt: PyPI version
 
-.. |Actions Status| image:: https://github.com/freiburgermsu/codons/workflows/Test%20codons/badge.svg
+.. |Actions Status| image:: https://github.com/freiburgermsu/codons/workflows/Test%20Codons/badge.svg
    :target: https://github.com/freiburgermsu/codons/actions
    :alt: Actions Status
 
@@ -15,8 +15,8 @@ Translating, Transcribing, and Investigating Genetic Sequences and their corresp
    :target: https://opensource.org/licenses/MIT
    :alt: License
 
-.. |Downloads| image:: https://pepy.tech/badge/codons
-   :target: https://pepy.tech/project/codons
+.. |Downloads| image:: https://pepy.tech/badge/Codons
+   :target: https://pepy.tech/project/Codons
    :alt: Downloads
 
 

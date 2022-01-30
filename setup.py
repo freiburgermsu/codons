@@ -11,7 +11,7 @@ setup(
   package_data = {
 	'codons':['rosetta_stone/*'],
   },
-  version = '0.0.1',
+  version = '0.0.3',
   license = 'MIT',
   description = "Translates and transcribes an arbitrary genetic sequence, generates FASTA-formatted files, and interfaces with BLAST databases to identify genetic and protein sequences.", 
   long_description = readme,
