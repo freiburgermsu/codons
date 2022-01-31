@@ -5,7 +5,7 @@
   <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
   <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
   <BlastOutput_db>nr</BlastOutput_db>
-  <BlastOutput_query-ID>Query_64661</BlastOutput_query-ID>
+  <BlastOutput_query-ID>Query_14635</BlastOutput_query-ID>
   <BlastOutput_query-def>Protein - 8_residues - 1124.3123_amu</BlastOutput_query-def>
   <BlastOutput_query-len>9</BlastOutput_query-len>
   <BlastOutput_param>
@@ -20,7 +20,7 @@
 <BlastOutput_iterations>
 <Iteration>
   <Iteration_iter-num>1</Iteration_iter-num>
-  <Iteration_query-ID>Query_64661</Iteration_query-ID>
+  <Iteration_query-ID>Query_14635</Iteration_query-ID>
   <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
   <Iteration_query-len>9</Iteration_query-len>
 <Iteration_hits>
@@ -39,8 +39,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>2</Iteration_iter-num>
-  <Iteration_query-ID>Query_64662</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14636</Iteration_query-ID>
+  <Iteration_query-def>Protein - 15_residues - 2154.24672_amu</Iteration_query-def>
   <Iteration_query-len>16</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -58,8 +58,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>3</Iteration_iter-num>
-  <Iteration_query-ID>Query_64663</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14637</Iteration_query-ID>
+  <Iteration_query-def>Protein - 6_residues - 827.91874_amu</Iteration_query-def>
   <Iteration_query-len>7</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -77,8 +77,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>4</Iteration_iter-num>
-  <Iteration_query-ID>Query_64664</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14638</Iteration_query-ID>
+  <Iteration_query-def>Protein - 8_residues - 1104.23148_amu</Iteration_query-def>
   <Iteration_query-len>9</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -96,8 +96,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>5</Iteration_iter-num>
-  <Iteration_query-ID>Query_64665</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14639</Iteration_query-ID>
+  <Iteration_query-def>Protein - 1_residues - 165.18914_amu</Iteration_query-def>
   <Iteration_query-len>2</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -115,8 +115,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>6</Iteration_iter-num>
-  <Iteration_query-ID>Query_64666</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14640</Iteration_query-ID>
+  <Iteration_query-def>Protein - 3_residues - 393.51876_amu</Iteration_query-def>
   <Iteration_query-len>4</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -134,8 +134,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>7</Iteration_iter-num>
-  <Iteration_query-ID>Query_64667</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14641</Iteration_query-ID>
+  <Iteration_query-def>Protein - 3_residues - 352.38402_amu</Iteration_query-def>
   <Iteration_query-len>4</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -153,8 +153,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>8</Iteration_iter-num>
-  <Iteration_query-ID>Query_64668</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14642</Iteration_query-ID>
+  <Iteration_query-def>Protein - 25_residues - 3326.59382_amu</Iteration_query-def>
   <Iteration_query-len>26</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -172,8 +172,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>9</Iteration_iter-num>
-  <Iteration_query-ID>Query_64669</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14643</Iteration_query-ID>
+  <Iteration_query-def>Protein - 3_residues - 470.56302_amu</Iteration_query-def>
   <Iteration_query-len>4</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -191,8 +191,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>10</Iteration_iter-num>
-  <Iteration_query-ID>Query_64670</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14644</Iteration_query-ID>
+  <Iteration_query-def>Protein - 35_residues - 4661.39614_amu</Iteration_query-def>
   <Iteration_query-len>36</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -210,8 +210,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>11</Iteration_iter-num>
-  <Iteration_query-ID>Query_64671</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14645</Iteration_query-ID>
+  <Iteration_query-def>Protein - 4_residues - 640.72716_amu</Iteration_query-def>
   <Iteration_query-len>5</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -229,8 +229,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>12</Iteration_iter-num>
-  <Iteration_query-ID>Query_64672</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14646</Iteration_query-ID>
+  <Iteration_query-def>Protein - 3_residues - 386.4433_amu</Iteration_query-def>
   <Iteration_query-len>4</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -248,8 +248,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>13</Iteration_iter-num>
-  <Iteration_query-ID>Query_64673</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14647</Iteration_query-ID>
+  <Iteration_query-def>Protein - 21_residues - 2653.0669_amu</Iteration_query-def>
   <Iteration_query-len>22</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -267,8 +267,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>14</Iteration_iter-num>
-  <Iteration_query-ID>Query_64674</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14648</Iteration_query-ID>
+  <Iteration_query-def>Protein - 4_residues - 482.61194_amu</Iteration_query-def>
   <Iteration_query-len>5</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -286,8 +286,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>15</Iteration_iter-num>
-  <Iteration_query-ID>Query_64675</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14649</Iteration_query-ID>
+  <Iteration_query-def>Protein - 8_residues - 1007.19758_amu</Iteration_query-def>
   <Iteration_query-len>9</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -305,8 +305,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>16</Iteration_iter-num>
-  <Iteration_query-ID>Query_64676</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14650</Iteration_query-ID>
+  <Iteration_query-def>Protein - 1_residues - 115.13046_amu</Iteration_query-def>
   <Iteration_query-len>2</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -324,8 +324,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>17</Iteration_iter-num>
-  <Iteration_query-ID>Query_64677</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14651</Iteration_query-ID>
+  <Iteration_query-def>Protein - 1_residues - 117.14634_amu</Iteration_query-def>
   <Iteration_query-len>2</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -343,8 +343,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>18</Iteration_iter-num>
-  <Iteration_query-ID>Query_64678</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14652</Iteration_query-ID>
+  <Iteration_query-def>Protein - 2_residues - 222.23892_amu</Iteration_query-def>
   <Iteration_query-len>3</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -362,8 +362,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>19</Iteration_iter-num>
-  <Iteration_query-ID>Query_64679</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14653</Iteration_query-ID>
+  <Iteration_query-def>Protein - 38_residues - 5036.4143_amu</Iteration_query-def>
   <Iteration_query-len>39</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -381,8 +381,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>20</Iteration_iter-num>
-  <Iteration_query-ID>Query_64680</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14654</Iteration_query-ID>
+  <Iteration_query-def>Protein - 11_residues - 1490.62864_amu</Iteration_query-def>
   <Iteration_query-len>12</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -400,8 +400,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>21</Iteration_iter-num>
-  <Iteration_query-ID>Query_64681</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14655</Iteration_query-ID>
+  <Iteration_query-def>Protein - 3_residues - 331.34334_amu</Iteration_query-def>
   <Iteration_query-len>4</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -419,8 +419,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>22</Iteration_iter-num>
-  <Iteration_query-ID>Query_64682</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14656</Iteration_query-ID>
+  <Iteration_query-def>Protein - 1_residues - 131.17292_amu</Iteration_query-def>
   <Iteration_query-len>2</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -438,8 +438,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>23</Iteration_iter-num>
-  <Iteration_query-ID>Query_64683</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14657</Iteration_query-ID>
+  <Iteration_query-def>Protein - 7_residues - 848.9198_amu</Iteration_query-def>
   <Iteration_query-len>8</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -457,8 +457,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>24</Iteration_iter-num>
-  <Iteration_query-ID>Query_64684</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14658</Iteration_query-ID>
+  <Iteration_query-def>Protein - 17_residues - 2505.8743_amu</Iteration_query-def>
   <Iteration_query-len>18</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -476,8 +476,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>25</Iteration_iter-num>
-  <Iteration_query-ID>Query_64685</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14659</Iteration_query-ID>
+  <Iteration_query-def>Protein - 16_residues - 1895.15518_amu</Iteration_query-def>
   <Iteration_query-len>17</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -495,8 +495,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>26</Iteration_iter-num>
-  <Iteration_query-ID>Query_64686</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14660</Iteration_query-ID>
+  <Iteration_query-def>Protein - 1_residues - 115.13046_amu</Iteration_query-def>
   <Iteration_query-len>2</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -514,8 +514,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>27</Iteration_iter-num>
-  <Iteration_query-ID>Query_64687</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14661</Iteration_query-ID>
+  <Iteration_query-def>Protein - 1_residues - 155.15456_amu</Iteration_query-def>
   <Iteration_query-len>2</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -533,8 +533,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>28</Iteration_iter-num>
-  <Iteration_query-ID>Query_64688</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14662</Iteration_query-ID>
+  <Iteration_query-def>Protein - 3_residues - 285.31796_amu</Iteration_query-def>
   <Iteration_query-len>4</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -552,8 +552,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>29</Iteration_iter-num>
-  <Iteration_query-ID>Query_64689</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14663</Iteration_query-ID>
+  <Iteration_query-def>Protein - 66_residues - 8680.64688_amu</Iteration_query-def>
   <Iteration_query-len>67</Iteration_query-len>
 <Iteration_hits>
 <Hit>
@@ -1971,8 +1971,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>30</Iteration_iter-num>
-  <Iteration_query-ID>Query_64690</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14664</Iteration_query-ID>
+  <Iteration_query-def>Protein - 4_residues - 643.68804_amu</Iteration_query-def>
   <Iteration_query-len>5</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -1990,8 +1990,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>31</Iteration_iter-num>
-  <Iteration_query-ID>Query_64691</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14665</Iteration_query-ID>
+  <Iteration_query-def>Protein - 13_residues - 1671.75252_amu</Iteration_query-def>
   <Iteration_query-len>14</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -2009,8 +2009,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>32</Iteration_iter-num>
-  <Iteration_query-ID>Query_64692</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14666</Iteration_query-ID>
+  <Iteration_query-def>Protein - 8_residues - 1033.01956_amu</Iteration_query-def>
   <Iteration_query-len>9</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -2028,8 +2028,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>33</Iteration_iter-num>
-  <Iteration_query-ID>Query_64693</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14667</Iteration_query-ID>
+  <Iteration_query-def>Protein - 17_residues - 2328.5652_amu</Iteration_query-def>
   <Iteration_query-len>18</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -2047,8 +2047,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>34</Iteration_iter-num>
-  <Iteration_query-ID>Query_64694</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14668</Iteration_query-ID>
+  <Iteration_query-def>Protein - 18_residues - 2607.99452_amu</Iteration_query-def>
   <Iteration_query-len>19</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -2066,8 +2066,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>35</Iteration_iter-num>
-  <Iteration_query-ID>Query_64695</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14669</Iteration_query-ID>
+  <Iteration_query-def>Protein - 64_residues - 7953.25232_amu</Iteration_query-def>
   <Iteration_query-len>65</Iteration_query-len>
 <Iteration_hits>
 <Hit>
@@ -3485,8 +3485,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>36</Iteration_iter-num>
-  <Iteration_query-ID>Query_64696</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14670</Iteration_query-ID>
+  <Iteration_query-def>Protein - 34_residues - 4352.75008_amu</Iteration_query-def>
   <Iteration_query-len>35</Iteration_query-len>
 <Iteration_hits>
 <Hit>
@@ -4904,8 +4904,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>37</Iteration_iter-num>
-  <Iteration_query-ID>Query_64697</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14671</Iteration_query-ID>
+  <Iteration_query-def>Protein - 81_residues - 10537.67404_amu</Iteration_query-def>
   <Iteration_query-len>82</Iteration_query-len>
 <Iteration_hits>
 <Hit>
@@ -6323,8 +6323,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>38</Iteration_iter-num>
-  <Iteration_query-ID>Query_64698</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14672</Iteration_query-ID>
+  <Iteration_query-def>Protein - 38_residues - 5021.4759_amu</Iteration_query-def>
   <Iteration_query-len>39</Iteration_query-len>
 <Iteration_hits>
 <Hit>
@@ -7742,8 +7742,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>39</Iteration_iter-num>
-  <Iteration_query-ID>Query_64699</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14673</Iteration_query-ID>
+  <Iteration_query-def>Protein - 6_residues - 756.79954_amu</Iteration_query-def>
   <Iteration_query-len>7</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -7761,8 +7761,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>40</Iteration_iter-num>
-  <Iteration_query-ID>Query_64700</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14674</Iteration_query-ID>
+  <Iteration_query-def>Protein - 27_residues - 3746.23078_amu</Iteration_query-def>
   <Iteration_query-len>28</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
@@ -7780,8 +7780,8 @@
 </Iteration>
 <Iteration>
   <Iteration_iter-num>41</Iteration_iter-num>
-  <Iteration_query-ID>Query_64701</Iteration_query-ID>
-  <Iteration_query-def>Protein - 8_residues - 1124.3123_amu</Iteration_query-def>
+  <Iteration_query-ID>Query_14675</Iteration_query-ID>
+  <Iteration_query-def>Protein - 1_residues - 121.15818_amu</Iteration_query-def>
   <Iteration_query-len>2</Iteration_query-len>
 <Iteration_hits>
 </Iteration_hits>
