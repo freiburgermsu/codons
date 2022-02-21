@@ -2,8 +2,8 @@ from shutil import rmtree
 import codons
 import unittest, re, os, io
 
-fasta_link = 'https://github.com/freiburgermsu/codons/blob/main/examples/MERS/codons-DNA_to_RNA/genetic_sequence.fasta?raw=true'
-mers_sequence_link = 'https://github.com/freiburgermsu/codons/blob/main/examples/MERS/MERS_sequence.txt?raw=true'
+fasta_path = 'genetic_sequence.fasta'
+mers_sequence_path = 'MERS_sequence.txt'
 cd = codons.Codons()
 
 def test_init():
@@ -26,7 +26,7 @@ def test_init():
            
 def test_transcribe():
     # DNA -> RNA
-    rna_sequence = cd.transcribe(fasta_link = fasta_link)
+    rna_sequence = cd.transcribe(fasta_path = fasta_path)
     original_sequence = cd.sequence
     assert not re.search('[tT]', rna_sequence)
                    
@@ -36,7 +36,7 @@ def test_transcribe():
            
 def test_translate():
     # translate into a protein
-    cd.translate(fasta_link = fasta_link)
+    cd.translate(fasta_path = fasta_path)
     
     # assert qualities of the execution   
     assert type(cd.genes) is dict
@@ -49,7 +49,7 @@ def test_translate():
         assert type(pro['mass']) is float
                                      
 def test_make_fasta():
-    sequence, description, fasta = cd.read_fasta(fasta_link = mers_sequence_link)
+    sequence, description, fasta = cd.read_fasta(fasta_path = mers_sequence_path)
     asterix = True
     if not re.search('\*', sequence[0]):
         asterix = False
