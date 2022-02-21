@@ -19,6 +19,8 @@ Translating, Transcribing, and Investigating Genetic Sequences and their corresp
    :target: https://pepy.tech/project/Codons
    :alt: Downloads
 
+The Codons module is a lightweight tool for 1) conducting transcription and translation of genetic sequences, either in a FASTA format or a string; 2) making and reading FASTA or multi-FASTA files; and 3) conducting BLAST searches of protein and nucleotide sequences. Example Notebooks of these features are offered in the "examples" directory of the Codons `GitHub repository <https://github.com/freiburgermsu/codons/tree/main/examples>`_.
+
 
 
 Installation
