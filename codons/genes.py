@@ -132,15 +132,18 @@ class Codons():
             sequence = requests.get(fasta_link).content
             self.fasta_lines = io.StringIO(sequence.decode('utf-8')).readlines()
     
-        sequence = ''
+        sequences = []
+        descriptions = []
+        protein = ''
         for line in self.fasta_lines:
-            if not re.search('^>', line):
-                line = line.rstrip()
-                sequence += line
+            if not re.search('(^>)', line):
+                protein += line.rstrip()
             else:
-                description = line
+                descriptions.append(line)
+                sequences.append(protein)
+                protein = ''
                 
-        return sequence, description, self.make_fasta(sequence, description)
+        return sequences, descriptions, self.make_fasta(sequences[0], descriptions[0])
     
     def _paths(self, 
                export_name = None, 
@@ -160,8 +163,8 @@ class Codons():
                 tag = 'BLAST'
             else:
                 tag = 'BLASTp'
-        elif self.proteins != {}:
-            tag = f'{len(self.proteins)}_proteins'
+        elif self.genes != {}:
+            tag = f'{len(self.genes)}_proteins'
         elif self.transcribed_sequence:
             tag = f'{self.transcription}'
         if export_name is None:
@@ -216,9 +219,9 @@ class Codons():
             self.sequence = sequence
             self.gene_fasta = self.make_fasta(self.sequence, ' - '.join(['Genetic_sequence', f'{len(self.sequence)}_bps']))
         elif fasta_path:
-            self.sequence, description, self.gene_fasta = self._read_fasta(fasta_path)
+            sequences, descriptions, self.gene_fasta = self._read_fasta(fasta_path)
         elif fasta_link:
-            self.sequence, description, self.gene_fasta = self._read_fasta(fasta_link = fasta_link)
+            sequences, descriptions, self.gene_fasta = self._read_fasta(fasta_link = fasta_link)
             
         # determine the capitalization of the sequence
         for ch in sequence:
@@ -264,9 +267,11 @@ class Codons():
             self.sequence = sequence
             self.gene_fasta = self.make_fasta(self.sequence, ' - '.join(['Genetic_sequence', f'{len(self.sequence)}_bps']))
         elif fasta_path:
-            self.sequence, description, self.protein_fasta = self._read_fasta(fasta_path)
+            sequences, descriptions, self.gene_fasta = self._read_fasta(fasta_path)
+            self.sequence = sequences[0]
         elif fasta_link:
-            self.sequence, description, self.protein_fasta = self._read_fasta(fasta_link = fasta_link)
+            sequences, descriptiosn, self.gene_fasta = self._read_fasta(fasta_link = fasta_link)
+            self.sequence = sequences[0]
             
         self.protein_fasta = []
         self.missed_codons = []
@@ -317,9 +322,7 @@ class Codons():
                                     print(codon, '\t', amino_acid)
                                     
                     codon = ''
-                           
             self.genes[gene]['codons'] = codons
-            print(self.genes[gene])
                 
         self.protein_fasta = '\n'.join(self.protein_fasta)
         if self.printing:       
@@ -426,7 +429,7 @@ class Codons():
         with open(self.paths['genetic_sequence'], 'w') as genes:
             genes.write(self.gene_fasta)
             
-        if self.proteins != {}:
+        if self.genes != {}:
             self.paths['protein_sequence'] = os.path.join(self.export_path, 'protein_sequence.fasta')
             with open(self.paths['protein_sequence'], 'w') as proteins:
                 proteins.write(self.protein_fasta)
