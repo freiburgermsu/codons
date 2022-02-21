@@ -49,34 +49,22 @@ The data environment, in a `Python IDE <https://www.simplilearn.com/tutorials/py
 - *verbose* & *printing* ``bool``: specifies whether troubleshooting information or MW results will be printed, respectively.
 
 ++++++++++++++++
-transcribe()
+read_fasta()
 ++++++++++++++++
 
 A genetic sequence is converted from DNA -> RNA, or RNA -> DNA, where the directionality of the conversion is automatically listed in the FASTA description:
 
 .. code-block:: python
 
- transcribed_sequence = cd.transcribe(sequence = None, description = '')
+ sequences, descriptions, fasta_file = transcribed_sequence = cd.read_fasta(fasta_path = None, fasta_link = None):
 
-- *sequence* ``str``: The genetic seqeuence that will be transcribed. The sequence is case-insensitive, and can even possess line numbers or column-spaces, which the code ignores. The absence of a passed sequence executes the sequence that is loaded into the ``Codons`` object.
-- *description* ``str``: A description of the genetic seqeuence that will be added to the FASTA-formatted output of the function. 
+- *fasta_path* ``str``: The path to a FASTA file that will be loaded, parsed, and returned.
+- *fasta_link* ``str``: The URL link to a FASTA file that will be imported, parsed, and returned.
 
-**Returns**: *transcribed_sequence* ``str``: The translated sequence as a single string.
+**Returns**: 
 
-++++++++++++++++
-translate()
-++++++++++++++++
-
-A genetic sequence is translated into a FASTA-formatted sequence of amino acids for each protein that is coded by the genetic code:
-
-.. code-block:: python
-
- proteins = cd.translate(sequence = None, description = '')
-
-- *sequence* ``str``: The genetic seqeuence, of either DNA or RNA, that will be parsed and translated into a protein sequence. The sequence is case-insensitive, and can even possess line numbers or column-spaces, which the code ignores. The absence of a passed sequence executes the sequence that is loaded into the ``Codons`` object.
-- *description* ``str``: A description of the genetic seqeuence that will be added to the FASTA-formatted output of the function. 
-
-**Returns**: *proteins* ``dict``: A dictionary of the proteins, where the key is the one-letter protein sequence and the value is the mass of the respective sequence.
+- *sequences* & *descriptions* ``list``: The sequences and descriptions that are contained within the FASTA file.
+- *fasta_file* ``str``: The FASTA file as a string that is specified by the path or URL link argument.
 
 ++++++++++++++++
 make_fasta()
@@ -88,11 +76,45 @@ A simple function that returns, and optionally exports, a FASTA-formatted file f
 
  fasta_file = cd.make_fasta(sequence, description = 'sequence', export_path = None):
 
-- *sequence* ``str``: The genetic or protein seqeuence that will constitute the FASTA file. 
-- *description* ``str``: A description of the seqeuence that will be the first line of the FASTA file. 
+- *sequence* ``str``: The genetic or protein sequence that will constitute the FASTA file. 
+- *description* ``str``: A description of the sequence that will be the first line of the FASTA file. 
 - *export_path* ``str``: The path to which the FASTA file will be exported, where ``None`` specifies that the file will not be exported.
  
-**Returns**: *fasta_file* ``str``: The FASTA-formatted file, based upon the parameterized sequence and description.
+**Returns**: 
+
+- *fasta_file* ``str``: The FASTA-formatted file as a string, based upon the parameterized sequence and description.
+
+++++++++++++++++
+transcribe()
+++++++++++++++++
+
+A genetic sequence is converted from DNA -> RNA, or RNA -> DNA, where the directionality of the conversion is automatically listed in the FASTA description:
+
+.. code-block:: python
+
+ transcribed_sequence = cd.transcribe(sequence = None, description = '', fasta_path = None, fasta_link = None)
+
+- *sequence* ``str``: The genetic seqeuence that will be transcribed. The sequence is case-insensitive, and can even possess line numbers or column-spaces, which the code ignores. The absence of a passed sequence executes the sequence that is loaded into the ``Codons`` object.
+- *description* ``str``: A description of the genetic sequence that will be added to the FASTA-formatted output of the function. 
+- *fasta_path* & *fasta_link* ``str``: The path or URL link to a FASTA file that will be transcribed.
+
+**Returns**: 
+
+- *transcribed_sequence* ``str``: The translated sequence as a single string.
+
+++++++++++++++++
+translate()
+++++++++++++++++
+
+A genetic sequence is translated into a FASTA-formatted sequence of amino acids for each protein that is coded by the genetic code:
+
+.. code-block:: python
+
+ proteins = cd.translate(sequence = None, fasta_path = None, fasta_link = None)
+
+- *sequence* ``str``: The genetic sequence , of either DNA or RNA, that will be translated into a protein sequence. The sequence is case-insensitive, and can even possess line numbers or column-spaces, which the code ignores. The absence of a passed sequence executes the sequence that is loaded into the ``Codons`` object.
+- *fasta_path* & *fasta_link* ``str``: The path or URL link to a FASTA file that will be translated.
+
 
 ++++++++++++++++
 blast_protein()
@@ -102,11 +124,17 @@ A protein sequence or a FASTA-formatted file of protein sequences is searched in
 
 .. code-block:: python
 
- cd.blast_protein(sequence = None, database = 'nr', )
+ blast_results = cd.blast_protein(sequence = None, database = 'nr', description = 'Protein sequence description',  fasta_path = None, fasta_link = None,  export_name = None, export_directory = None)
 
 - *sequence* ``str``: The genetic seqeuence, of either DNA or RNA, that will be parsed and translated into a protein sequence. The sequence is case-insensitive, and can even possess line numbers or column-spaces, which the code ignores. The absence of a passed sequence executes the sequence that is loaded into the ``Codons`` object.
 - *database* ``str``: The BLAST database that will be searched for the protein sequence. Permissible options include: ``nr``, ``refseq_select``, ``refseq_protein``, ``landmark``, ``swissprot``, ``pataa``, ``pdb``, ``env_nr``, ``tsa_nr``.
+- *description* ``str``: A description of the genetic sequence that will be added to the FASTA-formatted output of the function. 
+- *fasta_path* & *fasta_link* ``str``: The path or URL link to a protein FASTA or multi-FASTA file that will be systematically searched.
 - *export_name* & *export_directory* ``str``: The name of the folder and directory to which the scraped BLAST data will be saved in a file: ``nucleotide_blast_results.xml``. The ``None`` values enable the code to construct a unique folder name that describes the contents and saves it to the current working directory.
+
+**Returns**
+
+- *blast_results* `Bio.Blast.NCBIXML`: An API accessible format that facilitates investigating the acquired BLAST from the search content.
 
 
 ++++++++++++++++++++++++++++
@@ -117,12 +145,17 @@ A genetic sequence is translated into a FASTA-formatted sequence of amino acids 
 
 .. code-block:: python
 
- cd.translate(sequence = None, database= 'nt', export_name = None, export_directory = None)
+ cd.blast_nucleotide(sequence = None, database= 'nt', description = 'Genetic sequence description', export_name = None, export_directory = None)
 
-- *sequence* ``str``: The genetic seqeuence, of either DNA or RNA, that will be parsed and translated into a protein sequence. The sequence is case-insensitive, and can even possess line numbers or column-spaces, which the code ignores. The absence of a passed sequence executes the sequence that is loaded into the ``Codons`` object.
+- *sequence* ``str``: The genetic sequence, of either DNA or RNA, that will be parsed and translated into a protein sequence. The sequence is case-insensitive, and can even possess line numbers or column-spaces, which the code ignores. The absence of a passed sequence executes the sequence that is loaded into the ``Codons`` object.
 - *database* ``str``: The BLAST database that will be searched for the nucleotide sequence. Permissible options include: ``nr``, ``nt``, ``refseq_select``, ``refseq_rna``, ``refseq_representative_genomes``, ``wgs``, ``refseq_genomes``, ``est``, ``SRA``, ``TSA``, ``HTGS``, ``pat``, ``pdb``, ``RefSeq_Gene``, ``gss``, ``dbsts``.
+- *description* ``str``: A description of the genetic sequence that will be added to the FASTA-formatted output of the function. 
+- *fasta_path* & *fasta_link* ``str``: The path or URL link to a protein FASTA or multi-FASTA file that will be systematically searched.
 - *export_name* & *export_directory* ``str``: The name of the folder and directory to which the scraped BLAST data will be saved in a file: ``protein_blast_results.xml``. The ``None`` values enable the code to construct a unique folder name that describes the contents and saves it to the current working directory.
 
+**Returns**
+
+- *blast_results* `Bio.Blast.NCBIXML`: An API accessible format that facilitates investigating the acquired BLAST from the search content.
 
 ++++++++++++++++
 export()
@@ -142,12 +175,11 @@ Accessible content
 ++++++++++++++++++++++++++
 The ``Codons`` object retains numerous components that are accessible to the user: 
 
-- *proteins* ``list``: A list of the protein sequences that are generated by the parameterized genetic sequence.
+- *genes* ``dict``: A dictionary of all genes in the genetic sequence, with sub-content of a list of all coding Codons in the gene and the corresponding protein sequence and mass.
 - *protein_fasta* & *gene_fasta* ``str``: Assembled FASTA-formatted files for the translated proteins from a parameterized genetic sequence and for a genetic sequence, respectively.
-- *protein_mass* ``dict``: A collection of the protein sequences and their respective masses, in a key-value pairing, that were discovered in the ``translate()`` function.
 - *transcribed_sequence* & *sequence* ``str``: The transcribed genetic sequence from the ``transcription()`` function, and the genetical sequence that is used in any of the ``Codons`` functions.
 - *amino_acid_synonyms* ``dict``: The synonyms for each amino acid, with keys of the full amino acid name.
-- *codons_table* & *changed_codons* ``dict``: The translation table between genetic codons and amion acid residues, which is accessed with case-insensitivity, and the translation conversions that were changed based upon the user's specification.
+- *codons_table* & *changed_codons* ``dict``: The translation table between genetic codons and amino acid residues, which is accessed with case-insensitivity, and the translation conversions that were changed based upon the user's specification.
 - *missed_codons* ``dict``: A collections of the codons that were parsed yet never matched with a ``codons_table`` key.
 - *paths* & *parameters* ``dict``: Collections of the paths and parameters are are defined for the simulation.
 - *export_path* ``str``: The complete export path for the ``Codons`` contents.

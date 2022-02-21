@@ -400,7 +400,7 @@ class Codons():
     def blast_nucleotide(self,
                          sequence: str = None,
                          database: str = 'nt',
-                         description: str = '',  # a description of the sequence
+                         description: str = 'Genetic sequence description',  # a description of the sequence
                          fasta_path: str = None, # The path to a fasta file
                          fasta_link: str = None,  # the path to the fasta file
                          export_name = None, 
@@ -451,6 +451,8 @@ class Codons():
             
         with open(self.paths['nucleotide_blast_results'][0], 'w') as nucleotide_data:
             nucleotide_data.write(self.nucleotide_blast_results)
+            
+        return NCBIXML.read(self.nucleotide_blast_results)
                 
     def export(self, export_name = None, export_directory = None):
         # define the simulation_path

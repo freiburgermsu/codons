@@ -9,9 +9,9 @@ setup(
   package_dir = {'genes':'codons'},
   packages = find_packages(),
   package_data = {
-	'codons':['rosetta_stone/*'],
+	'codons':['rosetta_stone/*', 'test/*']
   },
-  version = '0.0.4',
+  version = '0.0.5',
   license = 'MIT',
   description = "Translates and transcribes an arbitrary genetic sequence, generates FASTA-formatted files, and interfaces with BLAST databases to identify genetic and protein sequences.", 
   long_description = readme,
