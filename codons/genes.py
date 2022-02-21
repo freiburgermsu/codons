@@ -5,7 +5,7 @@ Created on Wed Jan 26 00:33:29 2022
 @author: Andrew Freiburger
 """
 from scipy.constants import hour
-from Bio.Blast import NCBIWWW
+from Bio.Blast import NCBIWWW, NCBIXML
 from chemw import Proteins
 #from pprint import pprint
 from math import ceil
@@ -71,7 +71,7 @@ class Codons():
                  ):
         self.verbose = verbose
         self.printing = printing
-        self.proteins = {}
+        self.genes = {}
         self.transcribed_sequence = None
         self.protein_blast_results = None
         self.nucleotide_blast_results = None
@@ -275,7 +275,6 @@ class Codons():
             
         self.protein_fasta = []
         self.missed_codons = []
-        self.genes = {}
         amino_acids = None
         self.sequence = re.sub('([^atucg])', '', self.sequence, flags = re.IGNORECASE)
         
@@ -358,10 +357,12 @@ class Codons():
         self.protein_blast_results = NCBIWWW.qblast('blastp', database, self.protein_fasta)
         
         # export the content
-        self.export(export_name, export_directory) 
+        self.export(export_name, export_directory, export_genetic_sequence = False) 
         self.paths['protein_blast_results'] = os.path.join(self.export_path, 'protein_blast_results.xml')
         with open(self.paths['protein_blast_results'], 'w') as protein_data:
             protein_data.write(self.protein_blast_results.read())
+            
+        return NCBIXML.read(self.protein_blast_results)
         
     def blast_nucleotide(self,
                          sequence: str = None,
@@ -418,16 +419,17 @@ class Codons():
         with open(self.paths['nucleotide_blast_results'][0], 'w') as nucleotide_data:
             nucleotide_data.write(self.nucleotide_blast_results)
                 
-    def export(self, export_name = None, export_directory = None):
+    def export(self, export_name = None, export_directory = None, export_genetic_sequence = True):
         # define the simulation_path
         self.export_path = self._paths(export_name, export_directory)
         if not os.path.exists(self.export_path):
             os.mkdir(self.export_path)
         
         # export the genetic and protein sequences
-        self.paths['genetic_sequence'] = os.path.join(self.export_path, 'genetic_sequence.fasta')
-        with open(self.paths['genetic_sequence'], 'w') as genes:
-            genes.write(self.gene_fasta)
+        if export_genetic_sequence:
+            self.paths['genetic_sequence'] = os.path.join(self.export_path, 'genetic_sequence.fasta')
+            with open(self.paths['genetic_sequence'], 'w') as genes:
+                genes.write(self.gene_fasta)
             
         if self.genes != {}:
             self.paths['protein_sequence'] = os.path.join(self.export_path, 'protein_sequence.fasta')
