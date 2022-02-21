@@ -19,6 +19,5 @@
     "TGG":"tryptophan", "UGG":"tryptophan",
     "CGT":"arginine", "CGC":"arginine", "CGA":"arginine", "CGG":"arginine", "AGA":"arginine", "AGG":"arginine", "CGU":"arginine", 
     "GGT":"glycine", "GGC":"glycine", "GGA":"glycine", "GGG":"glycine", "GGU":"glycine", 
-    "TAA":"stop", "TAG":"stop", "TGA":"stop", "UAA":"stop", "UAG":"stop", "UGA":"stop",
-    "ATG":"start", "AUG":"start"
+    "TAA":"stop", "TAG":"stop", "TGA":"stop", "UAA":"stop", "UAG":"stop", "UGA":"stop"
 }
