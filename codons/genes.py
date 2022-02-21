@@ -64,7 +64,6 @@ class Codons():
                  sequence: str = None,  # the genetic sequence can be optionally provided, for easy use in the other functions.
                  codons_table: str = 'standard', # the translation table for codons to amino acids
                  start_codons: list = ["ATG", "AUG"], # the list of start codons that are accepted by the code
-#                 end_codons: list = ["TAA", "TAG", "TGA", "UAA", "UAG", "UGA"], # define the codons that denote the end of a protein
                  amino_acids_form: str = 'one_letter', # selects the scale of amino acid nomenclature
                  hyphenated: bool = None, # selects whether the printed protein will be hyphenated between the protein residues
                  verbose: bool = False,
@@ -89,7 +88,6 @@ class Codons():
         self.parameters = {}
         self.parameters['residue_delimiter'] = '-' 
         self.parameters['start_codons'] = start_codons
-#        self.parameters['end_codons'] = end_codons
         
         # refine the sequence into the FASTA format
         self.sequence = sequence
@@ -249,13 +247,7 @@ class Codons():
         return self.transcribed_sequence
     
     def _find_start(self,i):
-        starts = '(?=' + '|'.join(self.parameters['start_codons']) + ')'
-#        ends = '|'.join(self.parameters['end_codons'])
-#        genes = re.split(starts, self.sequence, flags = re.IGNORECASE)
-#        for gene in genes[1:]:
-#            codons = [gene[i*3:i*3+3] for i in range(int(len(gene)/3))]
-#            self.genes[gene] = {'codons':codons}
-            
+        starts = '(?=' + '|'.join(self.parameters['start_codons']) + ')'            
         codon = ''
         while not re.search(starts, codon, flags=re.IGNORECASE) and i < len(self.sequence):
             codon = self.sequence[i:i+3]
