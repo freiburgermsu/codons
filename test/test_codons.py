@@ -1,9 +1,8 @@
-from shutil import rmtree
 import codons
-import unittest, re, os, io
+import re, os
 
-fasta_path = 'genetic_sequence.fasta'
-mers_sequence_path = 'MERS_sequence.txt'
+fasta_path = os.path.join(os.path.dirname(__file__), 'genetic_sequence.fasta')
+mers_sequence_path = os.path.join(os.path.dirname(__file__), 'MERS_sequence.txt')
 cd = codons.Codons()
 
 def test_init():
