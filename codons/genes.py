@@ -6,6 +6,7 @@ Created on Wed Jan 26 00:33:29 2022
 """
 from scipy.constants import hour
 from Bio.Blast import NCBIWWW, NCBIXML
+from warnings import warn
 from chemw import Proteins
 #from pprint import pprint
 from math import ceil
@@ -73,7 +74,7 @@ class Codons():
         self.printing = printing
         self.genes = {}
         self.transcribed_sequence = None
-        self.protein_blast_results = None
+        self.protein_blast_results = []
         self.nucleotide_blast_results = None
         self.gene_fasta = None
         self.protein_fasta = None
@@ -120,9 +121,9 @@ class Codons():
         for cd in self.changed_codons:
             self.codons_table[cd] = self.changed_codons[cd]
     
-    def _read_fasta(self,
+    def read_fasta(self,
                     fasta_path: str = None,  # the path to the fasta file
-                    fasta_link: str = None,  # the path to the fasta file
+                    fasta_link: str = None,  # the url to the fasta file
                     ):
         # import and parse fasta-formatted files        
         if fasta_path is not None:
@@ -134,16 +135,24 @@ class Codons():
     
         sequences = []
         descriptions = []
-        protein = ''
+        seq = ''
+        first = True
         for line in self.fasta_lines:
             if not re.search('(^>)', line):
-                protein += line.rstrip()
+                seq += line.rstrip()
             else:
+                if first:
+                    first = False
+                    continue
                 descriptions.append(line)
-                sequences.append(protein)
-                protein = ''
+                sequences.append(seq)
+                seq = ''
+        if sequences == []:
+            sequences.append(seq)
+            seq = re.sub('([^A-Z])', '', seq, flags = re.IGNORECASE)
+            descriptions.append(' - '.join(['Sequence', f'{len(seq)}_monomers']))
                 
-        return sequences, descriptions, self.make_fasta(sequences[0], descriptions[0])
+        return sequences, descriptions, self.make_fasta(sequences, descriptions)
     
     def _paths(self, 
                export_name = None, 
@@ -193,16 +202,29 @@ class Codons():
         return export_path
             
     def make_fasta(self,
-                   sequence: str,  # the genetic nucleotide sequence
-                   description: str = 'sequence', # the description of the genetic or protein sequence
+                   sequences: str,  # the genetic nucleotide sequence
+                   descriptions: str = 'sequence', # the description of the genetic or protein sequence
                    export_path: str = None
                    ):
-        if sequence is None:
+        if sequences is None:
             return None
-        if not re.search('\*', sequence):
-            sequence += '*'
             
-        fasta_file = '\n'.join(['>'+description, sequence])
+        if type(sequences) is list:
+            fasta_file = []
+            for index, sequence in enumerate(sequences):
+                description = descriptions[index]
+                if not re.search('\*', sequence):
+                    sequence += '*'
+                fasta = '\n'.join(['>'+description, sequence])
+                fasta_file.append(fasta)
+            fasta_file = '\n'.join(fasta_file)
+        elif type(sequences) is str:
+            if not re.search('\*', sequences):
+                sequences += '*'
+            fasta_file = '\n'.join(['>'+descriptions, sequences])
+        else:
+            ValueError(f'The sequence type {type(sequences)} is not supported by the function.')
+        
         if export_path is not None:
             with open(export_path, 'w') as out:
                 out.write(fasta_file)
@@ -217,14 +239,20 @@ class Codons():
                    ):
         if sequence:
             self.sequence = sequence
-            self.gene_fasta = self.make_fasta(self.sequence, ' - '.join(['Genetic_sequence', f'{len(self.sequence)}_bps']))
+            base_pairs = len(re.sub("([^atcgu])", "", self.sequence, flags = re.IGNORECASE))
+            unit = 'bp'
+            if base_pairs > 1e4:
+                unit = 'kbp'
+            self.gene_fasta = self.make_fasta(self.sequence, ' - '.join(['Genetic_sequence', f'{base_pairs}_{unit}']))
         elif fasta_path:
-            sequences, descriptions, self.gene_fasta = self._read_fasta(fasta_path)
+            sequences, descriptions, self.gene_fasta = self.read_fasta(fasta_path)
+            self.sequence = sequences[0]
         elif fasta_link:
-            sequences, descriptions, self.gene_fasta = self._read_fasta(fasta_link = fasta_link)
+            sequences, descriptions, self.gene_fasta = self.read_fasta(fasta_link = fasta_link)
+            self.sequence = sequences[0]
             
         # determine the capitalization of the sequence
-        for ch in sequence:
+        for ch in self.sequence:
             if re.search('[a-zA-Z]',ch): 
                 upper_case = ch.isupper()
                 break
@@ -267,10 +295,11 @@ class Codons():
             self.sequence = sequence
             self.gene_fasta = self.make_fasta(self.sequence, ' - '.join(['Genetic_sequence', f'{len(self.sequence)}_bps']))
         elif fasta_path:
-            sequences, descriptions, self.gene_fasta = self._read_fasta(fasta_path)
+            sequences, descriptions, self.gene_fasta = self.read_fasta(fasta_path)
             self.sequence = sequences[0]
         elif fasta_link:
-            sequences, descriptiosn, self.gene_fasta = self._read_fasta(fasta_link = fasta_link)
+            sequences, descriptiosn, self.gene_fasta = self.read_fasta(fasta_link = fasta_link)
+            print(sequences)
             self.sequence = sequences[0]
             
         self.protein_fasta = []
@@ -319,7 +348,6 @@ class Codons():
                                 amino_acids.append(amino_acid)
                                 if self.verbose:
                                     print(codon, '\t', amino_acid)
-                                    
                     codon = ''
             self.genes[gene]['codons'] = codons
                 
@@ -333,7 +361,7 @@ class Codons():
     def blast_protein(self,  # https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome
                       sequence: str = None,
                       database: str = 'nr', # the blastp database that will be searched with the collected FASTA sequences
-                      description: str = '',  # a description of the sequence
+                      description: str = 'Protein sequence description',  
                       fasta_path: str = None, # The path to a fasta file
                       fasta_link: str = None,  # the path to the fasta file
                       export_name = None, 
@@ -341,23 +369,28 @@ class Codons():
                       ):
         if sequence:
             self.sequence = sequence 
+            sequences = [sequence]
             self.protein_fasta = self.make_fasta(sequence, description) 
         elif fasta_path:
-            with open(fasta_path) as input:
-                self.protein_fasta = input.read() 
+            sequences, descriptions, self.protein_fasta = self.read_fasta(fasta_path = fasta_path)
         elif fasta_link:
-            sequence = requests.get(fasta_link).content
-            self.protein_fasta = io.StringIO(sequence.decode('utf-8')).read()
+            sequences, descriptions, self.protein_fasta = self.read_fasta(fasta_link = fasta_link)
             
         # estimate the completion time
         estimated_time = datetime.datetime.now()+datetime.timedelta(seconds = len(self.protein_fasta)/2)    # approximately 1/2 second per amino acid   
         print(f'The database search for the parameterized protein(s) will complete circa {estimated_time}.')
         
         # acquire the BLAST results
-        self.protein_blast_results = NCBIWWW.qblast('blastp', database, self.protein_fasta)
+        for index, sequence in enumerate(sequences):
+            short_query = False
+            if len(sequence) < 30:
+                short_query = True
+            self.protein_blast_results.append(NCBIWWW.qblast('blastp', database, sequence, short_query = short_query))
+            print(f' \rCompleted searches: {index+1}/{len(sequences)}\t{datetime.datetime.now()}', end='')
         
         # export the content
-        self.export(export_name, export_directory, export_genetic_sequence = False) 
+        self.protein_blast_results = '\n\n'.join(self.protein_blast_results)
+        self.export(export_name, export_directory) 
         self.paths['protein_blast_results'] = os.path.join(self.export_path, 'protein_blast_results.xml')
         with open(self.paths['protein_blast_results'], 'w') as protein_data:
             protein_data.write(self.protein_blast_results.read())
@@ -376,14 +409,13 @@ class Codons():
         self.nucleotide_blast_results = []
         if sequence:
             self.sequence = sequence 
+            sequences = [sequence]
             self.gene_fasta = self.make_fasta(sequence, description) 
         elif fasta_path:
-            with open(fasta_path) as input:
-                self.gene_fasta = input.read() 
+            sequences, descriptions, self.gene_fasta = self.read_fasta(fasta_path = fasta_path)
         elif fasta_link:
-            sequence = requests.get(fasta_link).content
-            self.gene_fasta = io.StringIO(sequence.decode('utf-8')).read()
-            
+            sequences, descriptions, self.gene_fasta = self.read_fasta(fasta_link = fasta_link)
+                        
         # estimate the completion time
         estimated_length = len(self.gene_fasta)/2
         estimated_time = datetime.datetime.now()+datetime.timedelta(seconds = estimated_length)    # approximately 1 second per nucleic acid
@@ -395,21 +427,22 @@ class Codons():
         self.export(export_name, export_directory)
         self.paths['nucleotide_blast_results'] = [os.path.join(self.export_path, 'nucleotide_blast_results.xml')]
         
-        section_size = 1000
-        sections = ceil(len(self.gene_fasta)/section_size)
-        sequence_sections = [self.gene_fasta[i*section_size:(i+1)*section_size] for i in range(0, sections)]
-        for sequence in sequence_sections:
-            nucleotide_blast_result = NCBIWWW.qblast('blastn', database, self.gene_fasta)
-            result = nucleotide_blast_result.read()
-            self.nucleotide_blast_results.append(result)
-            
-            # export this modular portion
-            export_path = self._paths('nucleotide_blast_results.xml', self.export_path)
-            self.paths['nucleotide_blast_results'].append(export_path)
-            with open(self.paths['nucleotide_blast_results'][-1], 'w') as nucleotide_data:
-                nucleotide_data.write(result)
-            
-            print(f'Section {sequence_sections.index(sequence)+1}/{sections} is completed: {datetime.datetime.now()}')
+        section_size = 4000
+        for sequence in sequences:
+            sections = ceil(len(sequence)/section_size)
+            sequence_sections = [sequence[i*section_size:(i+1)*section_size] for i in range(0, sections)]
+            for index, seq in enumerate(sequence_sections):
+                nucleotide_blast_result = NCBIWWW.qblast('blastn', database, seq)
+                result = nucleotide_blast_result.read()
+                self.nucleotide_blast_results.append(result)
+                
+                # export this modular portion
+                export_path = self._paths('nucleotide_blast_results.xml', self.export_path)
+                self.paths['nucleotide_blast_results'].append(export_path)
+                with open(self.paths['nucleotide_blast_results'][-1], 'w') as nucleotide_data:
+                    nucleotide_data.write(result)
+                
+                print(f'Section {index+1}/{sequence_sections} is completed:\t{datetime.datetime.now()}')
             
         # remove the parceled information and export a new combined file
         self.nucleotide_blast_results = '\n\n'.join(self.nucleotide_blast_results)
@@ -419,14 +452,14 @@ class Codons():
         with open(self.paths['nucleotide_blast_results'][0], 'w') as nucleotide_data:
             nucleotide_data.write(self.nucleotide_blast_results)
                 
-    def export(self, export_name = None, export_directory = None, export_genetic_sequence = True):
+    def export(self, export_name = None, export_directory = None):
         # define the simulation_path
         self.export_path = self._paths(export_name, export_directory)
         if not os.path.exists(self.export_path):
             os.mkdir(self.export_path)
         
         # export the genetic and protein sequences
-        if export_genetic_sequence:
+        if self.gene_fasta:
             self.paths['genetic_sequence'] = os.path.join(self.export_path, 'genetic_sequence.fasta')
             with open(self.paths['genetic_sequence'], 'w') as genes:
                 genes.write(self.gene_fasta)

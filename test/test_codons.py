@@ -2,52 +2,82 @@ from shutil import rmtree
 import codons
 import unittest, re, os, io
 
-dna_sequence = 'cactaagaaa gatgctgctg ctgctaaaaa taagatgcgc cacaagcgca cttccaccaa'
+fasta_link = 'https://github.com/freiburgermsu/codons/blob/main/examples/MERS/codons-DNA_to_RNA/genetic_sequence.fasta?raw=true'
+mers_sequence_link = 'https://github.com/freiburgermsu/codons/blob/main/examples/MERS/MERS_sequence.txt?raw=true'
 cd = codons.Codons()
 
 def test_init():
-    cd = codons.Codons(dna_sequence)
+    cd = codons.Codons()
+    
+    # assert qualities of the content
+    assert type(cd.codons_table) is codons.genes.CaseInsensitiveDict
     for TF in [cd.verbose, cd.printing, cd.verbose]:
         assert type(TF) is bool
-    assert type(cd.codons_table) is codons.genes.CaseInsensitiveDict
-    for dic in [cd.paths, cd.proteins, cd.parameters]:
+    for dic in [cd.paths, cd.genes, cd.parameters]:
         assert type(dic) is dict
     for path in ['changed_codons', 'standard_table', 'amino_acid_synonyms']:
         assert type(cd.paths[path]) is str
-    for string in [cd.sequence, cd.parameters['residue_delimiter']]:
+    for string in [cd.parameters['residue_delimiter']]:
         assert type(string) is str
+    for non in [cd.transcribed_sequence, cd.nucleotide_blast_results, cd.gene_fasta, cd.protein_fasta]:
+        assert non is None
+    for lis in [cd.protein_blast_results, cd.parameters['start_codons']]:
+        assert type(lis) is list
            
 def test_transcribe():
     # DNA -> RNA
-    rna_sequence = cd.transcribe(dna_sequence)
+    rna_sequence = cd.transcribe(fasta_link = fasta_link)
+    original_sequence = cd.sequence
     assert not re.search('[tT]', rna_sequence)
                    
     # RNA -> DNA
     dna_sequence2 = cd.transcribe(rna_sequence)
-    assert dna_sequence == dna_sequence2
+    assert original_sequence == dna_sequence2
            
 def test_translate():
     # translate into a protein
-    proteins = cd.translate(dna_sequence)
+    cd.translate(fasta_link = fasta_link)
     
-    # assert qualities of the execution               
-    assert type(proteins) is dict
-    for pro in proteins:
-        assert type(proteins[pro]) is float
+    # assert qualities of the execution   
+    assert type(cd.genes) is dict
+    for string in [cd.protein_fasta,]:
+        assert type(string) is str
+    for lis in [cd.missed_codons]:
+        assert type(lis) is list
+    for pro in [cd.genes[gene]['protein'] for gene in cd.genes]:
+        assert type(pro['sequence']) is str
+        assert type(pro['mass']) is float
                                      
 def test_make_fasta():
-    description = 'This is a sample DNA sequence'
-    fasta = cd.make_fasta(dna_sequence, description)
-
-    fasta_lines = io.StringIO(fasta)
+    sequence, description, fasta = cd.read_fasta(fasta_link = mers_sequence_link)
+    asterix = True
+    if not re.search('\*', sequence[0]):
+        asterix = False
+    fasta = cd.make_fasta(sequence, description)
+    
+    # affirm the generation of the FASTA file
+    descriptions = []
+    sequences = []
     first = True
-    for line in fasta_lines:
-        if first:
-            line = re.sub('>', '', line)
-            assert line.rstrip() == description
-            first = False
+    seq = ''
+    for line in fasta.splitlines():
+        if re.search('>', line):
+            line = line.replace('>', '')
+            descriptions.append(line)
+            if not first:
+                if not asterix:
+                    seq = seq.replace('*', '')
+                sequences.append(seq)
+            else:
+                first = False
         else:
-            assert line == dna_sequence+'*' 
+            seq += line
+    if sequences == []:
+        if not asterix:
+            seq = seq.replace('*', '')
+        sequences.append(seq)
+    assert sequences == sequence
+    assert descriptions == description
 
             
 # ================== The BLAST functions fail with the small sequence, and larger sequences are not practical for a unit-test script ==================
