@@ -1,0 +1,1441 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_15271</BlastOutput_query-ID>
+  <BlastOutput_query-def>unnamed protein product</BlastOutput_query-def>
+  <BlastOutput_query-len>21</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>200000</Parameters_expect>
+      <Parameters_gap-open>9</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_15271</Iteration_query-ID>
+  <Iteration_query-def>unnamed protein product</Iteration_query-def>
+  <Iteration_query-len>21</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>ref|WP_226054106.1|</Hit_id>
+  <Hit_def>oligosaccharide flippase family protein [Dickeya dadantii] &gt;gb|MCA7011633.1| oligosaccharide flippase family protein [Dickeya dadantii]</Hit_def>
+  <Hit_accession>WP_226054106</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>24.4756</Hsp_bit-score>
+      <Hsp_score>60</Hsp_score>
+      <Hsp_evalue>15054.2</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>276</Hsp_hit-from>
+      <Hsp_hit-to>295</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>16</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>20</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>ICSLYNRLEYPAIRARLIKV</Hsp_hseq>
+      <Hsp_midline>+C++Y+RL+YP   AR+I V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>ref|WP_236615307.1|</Hit_id>
+  <Hit_def>oligosaccharide flippase family protein [Dickeya dadantii]</Hit_def>
+  <Hit_accession>WP_236615307</Hit_accession>
+  <Hit_len>413</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>24.4756</Hsp_bit-score>
+      <Hsp_score>60</Hsp_score>
+      <Hsp_evalue>15084.9</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>276</Hsp_hit-from>
+      <Hsp_hit-to>295</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>16</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>20</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>ICSLYNRLEYPAIRARLIKV</Hsp_hseq>
+      <Hsp_midline>+C++Y+RL+YP   AR+I V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>emb|CAE7360596.1|</Hit_id>
+  <Hit_def>tetA [Symbiodinium necroappetens]</Hit_def>
+  <Hit_accession>CAE7360596</Hit_accession>
+  <Hit_len>1273</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>23.584</Hsp_bit-score>
+      <Hsp_score>57</Hsp_score>
+      <Hsp_evalue>29404.9</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>19</Hsp_query-to>
+      <Hsp_hit-from>430</Hsp_hit-from>
+      <Hsp_hit-to>448</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>19</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIIL</Hsp_qseq>
+      <Hsp_hseq>ICQLLERLVFPVSEARIVL</Hsp_hseq>
+      <Hsp_midline>+C + +RL +PVS ARI+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gb|PPQ69780.1|</Hit_id>
+  <Hit_def>hypothetical protein CVT26_014168 [Gymnopilus dilepis]</Hit_def>
+  <Hit_accession>PPQ69780</Hit_accession>
+  <Hit_len>982</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>23.584</Hsp_bit-score>
+      <Hsp_score>57</Hsp_score>
+      <Hsp_evalue>29737.7</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>830</Hsp_hit-from>
+      <Hsp_hit-to>845</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>16</Hsp_align-len>
+      <Hsp_qseq>AMYDRLQYPVSSARII</Hsp_qseq>
+      <Hsp_hseq>ALYDELEYPDSAARVI</Hsp_hseq>
+      <Hsp_midline>A+YD L+YP S+AR+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gb|OLP83347.1|</Hit_id>
+  <Hit_def>hypothetical protein AK812_SmicGene35893 [Symbiodinium microadriaticum]</Hit_def>
+  <Hit_accession>OLP83347</Hit_accession>
+  <Hit_len>912</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>23.584</Hsp_bit-score>
+      <Hsp_score>57</Hsp_score>
+      <Hsp_evalue>29849.4</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>19</Hsp_query-to>
+      <Hsp_hit-from>484</Hsp_hit-from>
+      <Hsp_hit-to>502</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>19</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIIL</Hsp_qseq>
+      <Hsp_hseq>ICQLLERLVFPVSEARIVL</Hsp_hseq>
+      <Hsp_midline>+C + +RL +PVS ARI+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>emb|CAE7243974.1|</Hit_id>
+  <Hit_def>unnamed protein product [Symbiodinium sp. KB8]</Hit_def>
+  <Hit_accession>CAE7243974</Hit_accession>
+  <Hit_len>883</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>23.584</Hsp_bit-score>
+      <Hsp_score>57</Hsp_score>
+      <Hsp_evalue>29900.9</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>19</Hsp_query-to>
+      <Hsp_hit-from>455</Hsp_hit-from>
+      <Hsp_hit-to>473</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>19</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIIL</Hsp_qseq>
+      <Hsp_hseq>ICQLLERLVFPVSEARIVL</Hsp_hseq>
+      <Hsp_midline>+C + +RL +PVS ARI+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>emb|CAE7852414.1|</Hit_id>
+  <Hit_def>unnamed protein product [Symbiodinium microadriaticum]</Hit_def>
+  <Hit_accession>CAE7852414</Hit_accession>
+  <Hit_len>858</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>23.584</Hsp_bit-score>
+      <Hsp_score>57</Hsp_score>
+      <Hsp_evalue>29948.1</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>19</Hsp_query-to>
+      <Hsp_hit-from>430</Hsp_hit-from>
+      <Hsp_hit-to>448</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>19</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIIL</Hsp_qseq>
+      <Hsp_hseq>ICQLLERLVFPVSEARIVL</Hsp_hseq>
+      <Hsp_midline>+C + +RL +PVS ARI+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>ref|WP_123252749.1|</Hit_id>
+  <Hit_def>oligosaccharide flippase family protein [Dickeya undicola] &gt;gb|RNM05574.1| flippase [Dickeya undicola]</Hit_def>
+  <Hit_accession>WP_123252749</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>23.584</Hsp_bit-score>
+      <Hsp_score>57</Hsp_score>
+      <Hsp_evalue>31639.5</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>276</Hsp_hit-from>
+      <Hsp_hit-to>295</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>16</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>20</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>ICSLYNRLEYPAIRARLMKV</Hsp_hseq>
+      <Hsp_midline>+C++Y+RL+YP   AR++ V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|WP_038918366.1|</Hit_id>
+  <Hit_def>MULTISPECIES: oligosaccharide flippase family protein [Dickeya] &gt;gb|AYH47423.1| polysaccharide biosynthesis protein [Dickeya fangzhongdai] &gt;gb|MBO8135746.1| oligosaccharide flippase family protein [Dickeya fangzhongdai] &gt;gb|MZG09931.1| oligosaccharide flippase family protein [Dickeya fangzhongdai] &gt;gb|UGA52294.1| oligosaccharide flippase family protein [Dickeya fangzhongdai]</Hit_def>
+  <Hit_accession>WP_038918366</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>23.584</Hsp_bit-score>
+      <Hsp_score>57</Hsp_score>
+      <Hsp_evalue>31639.5</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>276</Hsp_hit-from>
+      <Hsp_hit-to>295</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>16</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>20</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>ICSLYNRLEYPAIRARLMKV</Hsp_hseq>
+      <Hsp_midline>+C++Y+RL+YP   AR++ V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>ref|WP_033569321.1|</Hit_id>
+  <Hit_def>oligosaccharide flippase family protein [Dickeya undicola] &gt;gb|RNM21876.1| flippase [Dickeya undicola]</Hit_def>
+  <Hit_accession>WP_033569321</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>23.584</Hsp_bit-score>
+      <Hsp_score>57</Hsp_score>
+      <Hsp_evalue>31639.5</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>276</Hsp_hit-from>
+      <Hsp_hit-to>295</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>16</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>20</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>ICSLYNRLEYPAIRARLMKV</Hsp_hseq>
+      <Hsp_midline>+C++Y+RL+YP   AR++ V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|WP_100849178.1|</Hit_id>
+  <Hit_def>oligosaccharide flippase family protein [Dickeya fangzhongdai] &gt;gb|ATZ93783.1| flippase [Dickeya fangzhongdai] &gt;gb|QOH47216.1| flippase [Dickeya fangzhongdai] &gt;gb|QOH51522.1| flippase [Dickeya fangzhongdai] &gt;dbj|GGC10636.1| transporter [Dickeya fangzhongdai]</Hit_def>
+  <Hit_accession>WP_100849178</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>23.584</Hsp_bit-score>
+      <Hsp_score>57</Hsp_score>
+      <Hsp_evalue>31639.5</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>276</Hsp_hit-from>
+      <Hsp_hit-to>295</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>16</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>20</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>ICSLYNRLEYPAIRARLMKV</Hsp_hseq>
+      <Hsp_midline>+C++Y+RL+YP   AR++ V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>ref|WP_038660643.1|</Hit_id>
+  <Hit_def>oligosaccharide flippase family protein [Dickeya fangzhongdai] &gt;gb|AIR68696.1| polysaccharide biosynthesis protein [Dickeya fangzhongdai] &gt;gb|KGT96371.1| polysaccharide biosynthesis protein [Dickeya fangzhongdai] &gt;gb|KHN62630.1| polysaccharide biosynthesis protein [Dickeya fangzhongdai]</Hit_def>
+  <Hit_accession>WP_038660643</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>23.584</Hsp_bit-score>
+      <Hsp_score>57</Hsp_score>
+      <Hsp_evalue>31639.5</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>276</Hsp_hit-from>
+      <Hsp_hit-to>295</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>16</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>20</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>ICSLYNRLEYPAIRARLMKV</Hsp_hseq>
+      <Hsp_midline>+C++Y+RL+YP   AR++ V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>emb|CAE7448971.1|</Hit_id>
+  <Hit_def>unnamed protein product [Symbiodinium sp. CCMP2456]</Hit_def>
+  <Hit_accession>CAE7448971</Hit_accession>
+  <Hit_len>812</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>23.2868</Hsp_bit-score>
+      <Hsp_score>56</Hsp_score>
+      <Hsp_evalue>38490.7</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>19</Hsp_query-to>
+      <Hsp_hit-from>509</Hsp_hit-from>
+      <Hsp_hit-to>527</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>19</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIIL</Hsp_qseq>
+      <Hsp_hseq>ICQLLERLIFPVSEARIVL</Hsp_hseq>
+      <Hsp_midline>+C + +RL +PVS ARI+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>ref|WP_161131481.1|</Hit_id>
+  <Hit_def>oligosaccharide flippase family protein [Dickeya dianthicola] &gt;gb|MZG20286.1| oligosaccharide flippase family protein [Dickeya dianthicola] &gt;gb|MZI88869.1| oligosaccharide flippase family protein [Dickeya dianthicola] &gt;gb|QOL13954.1| oligosaccharide flippase family protein [Dickeya dianthicola]</Hit_def>
+  <Hit_accession>WP_161131481</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>23.2868</Hsp_bit-score>
+      <Hsp_score>56</Hsp_score>
+      <Hsp_evalue>40522.7</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>276</Hsp_hit-from>
+      <Hsp_hit-to>295</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>20</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>ICSLYNRLAYPAIRARLVKV</Hsp_hseq>
+      <Hsp_midline>+C++Y+RL YP   AR++ V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gb|MCD8396039.1|</Hit_id>
+  <Hit_def>N-acetylmuramoyl-L-alanine amidase [Lachnospiraceae bacterium]</Hit_def>
+  <Hit_accession>MCD8396039</Hit_accession>
+  <Hit_len>552</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.9896</Hsp_bit-score>
+      <Hsp_score>55</Hsp_score>
+      <Hsp_evalue>50647.5</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>348</Hsp_hit-from>
+      <Hsp_hit-to>367</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>11</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>20</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>MAAIYDRVYYPYSEERRIVV</Hsp_hseq>
+      <Hsp_midline>M A+YDR+ YP S  R I+V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gb|MBU0730191.1|</Hit_id>
+  <Hit_def>hypothetical protein [Proteobacteria bacterium] &gt;gb|MBU1710872.1| hypothetical protein [Proteobacteria bacterium]</Hit_def>
+  <Hit_accession>MBU0730191</Hit_accession>
+  <Hit_len>143</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>50756.6</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>51</Hsp_hit-from>
+      <Hsp_hit-to>68</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>AMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>SIHDNYNYPVSSARIITI</Hsp_hseq>
+      <Hsp_midline>+++D   YPVSSARII +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|WP_042859235.1|</Hit_id>
+  <Hit_def>oligosaccharide flippase family protein [Dickeya sp. NCPPB 3274]</Hit_def>
+  <Hit_accession>WP_042859235</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.9896</Hsp_bit-score>
+      <Hsp_score>55</Hsp_score>
+      <Hsp_evalue>51897.2</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>276</Hsp_hit-from>
+      <Hsp_hit-to>295</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>20</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>ICGLYNRLEYPAIRTRLIKV</Hsp_hseq>
+      <Hsp_midline>+C +Y+RL+YP    R+I V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|WP_229357253.1|</Hit_id>
+  <Hit_def>hypothetical protein [Streptomyces sp. UNOB3_S3] &gt;gb|MCC3778546.1| hypothetical protein [Streptomyces sp. UNOB3_S3]</Hit_def>
+  <Hit_accession>WP_229357253</Hit_accession>
+  <Hit_len>616</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>64322.8</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>582</Hsp_hit-from>
+      <Hsp_hit-to>601</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>12</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>20</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>ICAVNDPLDQPVSAARQILV</Hsp_hseq>
+      <Hsp_midline>+CA+ D L  PVS+AR ILV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gb|TMI87146.1|</Hit_id>
+  <Hit_def>CTP synthase [Terrabacteria group bacterium ANGP1]</Hit_def>
+  <Hit_accession>TMI87146</Hit_accession>
+  <Hit_len>556</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>64832.8</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>282</Hsp_hit-from>
+      <Hsp_hit-to>299</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>AMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>AMVERLRHPTSTVRIVLV</Hsp_hseq>
+      <Hsp_midline>AM +RL++P S+ RI+LV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gb|MCE2492066.1|</Hit_id>
+  <Hit_def>lytic transglycosylase domain-containing protein [Alphaproteobacteria bacterium]</Hit_def>
+  <Hit_accession>MCE2492066</Hit_accession>
+  <Hit_len>518</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>65216.8</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>16</Hsp_query-to>
+      <Hsp_hit-from>190</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>12</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>13</Hsp_align-len>
+      <Hsp_qseq>MYDRLQYPVSSAR</Hsp_qseq>
+      <Hsp_hseq>MYDRVRYPISRAR</Hsp_hseq>
+      <Hsp_midline>MYDR++YP+S AR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|WP_171850183.1|</Hit_id>
+  <Hit_def>oligosaccharide flippase family protein [Dickeya dadantii] &gt;gb|NPE54452.1| oligosaccharide flippase family protein [Dickeya dadantii] &gt;gb|NPE67221.1| oligosaccharide flippase family protein [Dickeya dadantii] &gt;gb|UAY97584.1| oligosaccharide flippase family protein [Dickeya dadantii]</Hit_def>
+  <Hit_accession>WP_171850183</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>66461</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>276</Hsp_hit-from>
+      <Hsp_hit-to>295</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>20</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>ICSLYNRLAYPAIRARLMKV</Hsp_hseq>
+      <Hsp_midline>+C++Y+RL YP   AR++ V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>ref|WP_171851818.1|</Hit_id>
+  <Hit_def>oligosaccharide flippase family protein [Dickeya dadantii] &gt;gb|NPE59560.1| oligosaccharide flippase family protein [Dickeya dadantii] &gt;gb|NPE69549.1| oligosaccharide flippase family protein [Dickeya dadantii]</Hit_def>
+  <Hit_accession>WP_171851818</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>66461</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>276</Hsp_hit-from>
+      <Hsp_hit-to>295</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>20</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>ICSLYNRLAYPAIRARLMKV</Hsp_hseq>
+      <Hsp_midline>+C++Y+RL YP   AR++ V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>ref|WP_077245796.1|</Hit_id>
+  <Hit_def>oligosaccharide flippase family protein [Dickeya dadantii] &gt;gb|OOC13811.1| polysaccharide biosynthesis protein [Dickeya dadantii]</Hit_def>
+  <Hit_accession>WP_077245796</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>66461</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>276</Hsp_hit-from>
+      <Hsp_hit-to>295</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>20</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>ICSLYNRLAYPAIRARLMKV</Hsp_hseq>
+      <Hsp_midline>+C++Y+RL YP   AR++ V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>ref|WP_161450534.1|</Hit_id>
+  <Hit_def>oligosaccharide flippase family protein [Dickeya dadantii] &gt;gb|NAT76275.1| flippase [Dickeya dadantii] &gt;gb|NPE61545.1| oligosaccharide flippase family protein [Dickeya dadantii]</Hit_def>
+  <Hit_accession>WP_161450534</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>66461</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>276</Hsp_hit-from>
+      <Hsp_hit-to>295</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>20</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>ICSLYNRLAYPAIRARLMKV</Hsp_hseq>
+      <Hsp_midline>+C++Y+RL YP   AR++ V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>ref|WP_216282200.1|</Hit_id>
+  <Hit_def>oligosaccharide flippase family protein [Dickeya dadantii] &gt;gb|QWT39994.1| oligosaccharide flippase family protein [Dickeya dadantii]</Hit_def>
+  <Hit_accession>WP_216282200</Hit_accession>
+  <Hit_len>423</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>66461</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>276</Hsp_hit-from>
+      <Hsp_hit-to>295</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>20</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>ICSLYNRLAYPAIRARLMKV</Hsp_hseq>
+      <Hsp_midline>+C++Y+RL YP   AR++ V</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>ref|XP_009690126.1|</Hit_id>
+  <Hit_def>ubiquitin carboxyl-terminal hydrolase [Theileria orientalis strain Shintoku] &gt;dbj|BAM39825.1| ubiquitin carboxyl-terminal hydrolase [Theileria orientalis strain Shintoku]</Hit_def>
+  <Hit_accession>XP_009690126</Hit_accession>
+  <Hit_len>382</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>67124.3</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>286</Hsp_hit-from>
+      <Hsp_hit-to>303</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>11</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARII</Hsp_qseq>
+      <Hsp_hseq>MCNMYERLQYQVISSNEI</Hsp_hseq>
+      <Hsp_midline>MC MY+RLQY V S+  I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gb|UKJ90138.1|</Hit_id>
+  <Hit_def>Ubiquitin carboxyl-terminal hydrolase 46 [Theileria orientalis]</Hit_def>
+  <Hit_accession>UKJ90138</Hit_accession>
+  <Hit_len>382</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>67124.3</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>286</Hsp_hit-from>
+      <Hsp_hit-to>303</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>11</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARII</Hsp_qseq>
+      <Hsp_hseq>MCNMYERLQYQVISSNEI</Hsp_hseq>
+      <Hsp_midline>MC MY+RLQY V S+  I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>gb|NQT47742.1|</Hit_id>
+  <Hit_def>3-hydroxybutyryl-CoA dehydrogenase [Chloroflexi bacterium]</Hit_def>
+  <Hit_accession>NQT47742</Hit_accession>
+  <Hit_len>283</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>67754.2</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>19</Hsp_query-to>
+      <Hsp_hit-from>244</Hsp_hit-from>
+      <Hsp_hit-to>262</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>11</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>19</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIIL</Hsp_qseq>
+      <Hsp_hseq>MCAMYDELKDPLFAPPIIL</Hsp_hseq>
+      <Hsp_midline>MCAMYD L+ P+ +  IIL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>gb|UKK02322.1|</Hit_id>
+  <Hit_def>Ubiquitin carboxyl-terminal hydrolase 46 [Theileria orientalis]</Hit_def>
+  <Hit_accession>UKK02322</Hit_accession>
+  <Hit_len>298</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>67938.3</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>202</Hsp_hit-from>
+      <Hsp_hit-to>219</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>11</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARII</Hsp_qseq>
+      <Hsp_hseq>MCNMYERLQYQVISSNEI</Hsp_hseq>
+      <Hsp_midline>MC MY+RLQY V S+  I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>gb|KAF8971700.1|</Hit_id>
+  <Hit_def>hypothetical protein BDZ97DRAFT_1901423 [Flammula alnicola]</Hit_def>
+  <Hit_accession>KAF8971700</Hit_accession>
+  <Hit_len>312</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>67967.2</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>176</Hsp_hit-from>
+      <Hsp_hit-to>191</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>16</Hsp_align-len>
+      <Hsp_qseq>AMYDRLQYPVSSARII</Hsp_qseq>
+      <Hsp_hseq>ALYDELEYPDTAARVI</Hsp_hseq>
+      <Hsp_midline>A+YD L+YP ++AR+I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>gb|MBE9179673.1|</Hit_id>
+  <Hit_def>hypothetical protein [Oculatella sp. LEGE 06141]</Hit_def>
+  <Hit_accession>MBE9179673</Hit_accession>
+  <Hit_len>75</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.8008</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>83043.9</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>19</Hsp_query-to>
+      <Hsp_hit-from>11</Hsp_hit-from>
+      <Hsp_hit-to>24</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>12</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>14</Hsp_align-len>
+      <Hsp_qseq>DRLQYPVSSARIIL</Hsp_qseq>
+      <Hsp_hseq>DRIQYPVSSPSVLL</Hsp_hseq>
+      <Hsp_midline>DR+QYPVSS  ++L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>gb|MBI9062000.1|</Hit_id>
+  <Hit_def>hypothetical protein [Marinilabiliaceae bacterium]</Hit_def>
+  <Hit_accession>MBI9062000</Hit_accession>
+  <Hit_len>80</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.8008</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>84957.3</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>10</Hsp_hit-from>
+      <Hsp_hit-to>28</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>19</Hsp_align-len>
+      <Hsp_qseq>CAMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>CAFYDQLEYLAMKKQIILI</Hsp_hseq>
+      <Hsp_midline>CA YD+L+Y     +IIL+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>emb|CAD6197205.1|</Hit_id>
+  <Hit_def>unnamed protein product [Caenorhabditis auriculariae]</Hit_def>
+  <Hit_accession>CAD6197205</Hit_accession>
+  <Hit_len>427</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.3952</Hsp_bit-score>
+      <Hsp_score>53</Hsp_score>
+      <Hsp_evalue>85028.7</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>380</Hsp_hit-from>
+      <Hsp_hit-to>396</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARI</Hsp_qseq>
+      <Hsp_hseq>MCELCRRLQYPIDSSKI</Hsp_hseq>
+      <Hsp_midline>MC +  RLQYP+ S++I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>gb|MBF0104569.1|</Hit_id>
+  <Hit_def>hypothetical protein [Deltaproteobacteria bacterium]</Hit_def>
+  <Hit_accession>MBF0104569</Hit_accession>
+  <Hit_len>252</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.3952</Hsp_bit-score>
+      <Hsp_score>53</Hsp_score>
+      <Hsp_evalue>85974.3</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>16</Hsp_query-to>
+      <Hsp_hit-from>183</Hsp_hit-from>
+      <Hsp_hit-to>194</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>11</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>12</Hsp_align-len>
+      <Hsp_qseq>YDRLQYPVSSAR</Hsp_qseq>
+      <Hsp_hseq>YDRLQYPVSAFR</Hsp_hseq>
+      <Hsp_midline>YDRLQYPVS+ R</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>ref|WP_216584413.1|</Hit_id>
+  <Hit_def>transposase [Actinomyces sp. oral taxon 448]</Hit_def>
+  <Hit_accession>WP_216584413</Hit_accession>
+  <Hit_len>145</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>88080.1</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>19</Hsp_query-to>
+      <Hsp_hit-from>24</Hsp_hit-from>
+      <Hsp_hit-to>42</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>8</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>19</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIIL</Hsp_qseq>
+      <Hsp_hseq>LCAVLERMDQPASSGRVII</Hsp_hseq>
+      <Hsp_midline>+CA+ +R+  P SS R+I+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>gb|EGQ73244.1|</Hit_id>
+  <Hit_def>hypothetical protein HMPREF9062_1795 [Actinomyces sp. oral taxon 448 str. F0400]</Hit_def>
+  <Hit_accession>EGQ73244</Hit_accession>
+  <Hit_len>162</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>93875.5</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>19</Hsp_query-to>
+      <Hsp_hit-from>41</Hsp_hit-from>
+      <Hsp_hit-to>59</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>8</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>19</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARIIL</Hsp_qseq>
+      <Hsp_hseq>LCAVLERMDQPASSGRVII</Hsp_hseq>
+      <Hsp_midline>+CA+ +R+  P SS R+I+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>ref|WP_193879790.1|</Hit_id>
+  <Hit_def>hypothetical protein [Oculatella sp. LEGE 06141]</Hit_def>
+  <Hit_accession>WP_193879790</Hit_accession>
+  <Hit_len>101</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.8008</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>94286.9</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>19</Hsp_query-to>
+      <Hsp_hit-from>37</Hsp_hit-from>
+      <Hsp_hit-to>50</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>12</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>14</Hsp_align-len>
+      <Hsp_qseq>DRLQYPVSSARIIL</Hsp_qseq>
+      <Hsp_hseq>DRIQYPVSSPSVLL</Hsp_hseq>
+      <Hsp_midline>DR+QYPVSS  ++L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>gb|MBL0316613.1|</Hit_id>
+  <Hit_def>T9SS type A sorting domain-containing protein [Flavobacteriales bacterium]</Hit_def>
+  <Hit_accession>MBL0316613</Hit_accession>
+  <Hit_len>111</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.8008</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>99129.7</Hsp_evalue>
+      <Hsp_query-from>6</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>23</Hsp_hit-from>
+      <Hsp_hit-to>35</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>12</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>13</Hsp_align-len>
+      <Hsp_qseq>DRLQYPVSSARII</Hsp_qseq>
+      <Hsp_hseq>DRLSHPISSARIV</Hsp_hseq>
+      <Hsp_midline>DRL +P+SSARI+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>gb|OQS04132.1|</Hit_id>
+  <Hit_def>exportin-4, partial [Thraustotheca clavata]</Hit_def>
+  <Hit_accession>OQS04132</Hit_accession>
+  <Hit_len>1755</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>100621</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>85</Hsp_hit-from>
+      <Hsp_hit-to>102</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>11</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARII</Hsp_qseq>
+      <Hsp_hseq>VCAAYDRLQSFVSSAVLV</Hsp_hseq>
+      <Hsp_midline>+CA YDRLQ  VSSA ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>dbj|GEU70876.1|</Hit_id>
+  <Hit_def>retrovirus-related Pol polyprotein from transposon TNT 1-94 [Tanacetum cinerariifolium]</Hit_def>
+  <Hit_accession>GEU70876</Hit_accession>
+  <Hit_len>1136</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>102070</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>1101</Hsp_hit-from>
+      <Hsp_hit-to>1116</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>16</Hsp_align-len>
+      <Hsp_qseq>YDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>HSKMYYPVSTARVILV</Hsp_hseq>
+      <Hsp_midline>+ ++ YPVS+AR+ILV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>ref|WP_161982572.1|</Hit_id>
+  <Hit_def>N-6 DNA methylase [Dictyobacter alpinus] &gt;dbj|GCE31011.1| hypothetical protein KDA_64950 [Dictyobacter alpinus]</Hit_def>
+  <Hit_accession>WP_161982572</Hit_accession>
+  <Hit_len>1026</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>102510</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>15</Hsp_query-to>
+      <Hsp_hit-from>92</Hsp_hit-from>
+      <Hsp_hit-to>106</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>15</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSA</Hsp_qseq>
+      <Hsp_hseq>LAALYERLQYPSSSS</Hsp_hseq>
+      <Hsp_midline>+ A+Y+RLQYP SS+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>ref|WP_235987448.1|</Hit_id>
+  <Hit_def>AAA family ATPase [Halosaccharopolyspora lacisalsi]</Hit_def>
+  <Hit_accession>WP_235987448</Hit_accession>
+  <Hit_len>948</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>102885</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>473</Hsp_hit-from>
+      <Hsp_hit-to>491</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>19</Hsp_align-len>
+      <Hsp_qseq>CAMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>CAIHNRLEESVDSARAVLV</Hsp_hseq>
+      <Hsp_midline>CA+++RL+  V SAR +LV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>gb|MBA8826211.1|</Hit_id>
+  <Hit_def>DNA-binding CsgD family transcriptional regulator/tetratricopeptide (TPR) repeat protein [Halosaccharopolyspora lacisalsi]</Hit_def>
+  <Hit_accession>MBA8826211</Hit_accession>
+  <Hit_len>904</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>103124</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>20</Hsp_query-to>
+      <Hsp_hit-from>429</Hsp_hit-from>
+      <Hsp_hit-to>447</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>19</Hsp_align-len>
+      <Hsp_qseq>CAMYDRLQYPVSSARIILV</Hsp_qseq>
+      <Hsp_hseq>CAIHNRLEESVDSARAVLV</Hsp_hseq>
+      <Hsp_midline>CA+++RL+  V SAR +LV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>dbj|GFY22341.1|</Hit_id>
+  <Hit_def>retrovirus-related Pol polyprotein from transposon TNT 1-94 [Trichonephila clavipes]</Hit_def>
+  <Hit_accession>GFY22341</Hit_accession>
+  <Hit_len>719</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>104453</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>520</Hsp_hit-from>
+      <Hsp_hit-to>536</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>8</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARI</Hsp_qseq>
+      <Hsp_hseq>LCEIYEKIKYPVSSLPI</Hsp_hseq>
+      <Hsp_midline>+C +Y++++YPVSS  I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>gb|KAF7078264.1|</Hit_id>
+  <Hit_def>hypothetical protein CFC21_082729, partial [Triticum aestivum]</Hit_def>
+  <Hit_accession>KAF7078264</Hit_accession>
+  <Hit_len>67</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>106160</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>16</Hsp_query-to>
+      <Hsp_hit-from>15</Hsp_hit-from>
+      <Hsp_hit-to>30</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>12</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>16</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSAR</Hsp_qseq>
+      <Hsp_hseq>MCAILSRLRKPTSSAR</Hsp_hseq>
+      <Hsp_midline>MCA+  RL+ P SSAR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>gb|MCC2676534.1|</Hit_id>
+  <Hit_def>putative rane protein of unknown function [Ramlibacter sp.]</Hit_def>
+  <Hit_accession>MCC2676534</Hit_accession>
+  <Hit_len>557</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>106341</Hsp_evalue>
+      <Hsp_query-from>5</Hsp_query-from>
+      <Hsp_query-to>19</Hsp_query-to>
+      <Hsp_hit-from>54</Hsp_hit-from>
+      <Hsp_hit-to>68</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>12</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>15</Hsp_align-len>
+      <Hsp_qseq>YDRLQYPVSSARIIL</Hsp_qseq>
+      <Hsp_hseq>YDRLNYHISSARALL</Hsp_hseq>
+      <Hsp_midline>YDRL Y +SSAR +L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>47</Hit_num>
+  <Hit_id>ref|YP_009802440.1|</Hit_id>
+  <Hit_def>intra-Golgi vesicle-mediated transport [Lactobacillus phage Lb] &gt;gb|ATN94157.1| intra-Golgi vesicle-mediated transport [Lactobacillus phage Lb]</Hit_def>
+  <Hit_accession>YP_009802440</Hit_accession>
+  <Hit_len>261</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>111322</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>19</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARII</Hsp_qseq>
+      <Hsp_hseq>MCEHYERLQNPISSFNLL</Hsp_hseq>
+      <Hsp_midline>MC  Y+RLQ P+SS  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>48</Hit_num>
+  <Hit_id>ref|WP_233752107.1|</Hit_id>
+  <Hit_def>hypothetical protein [Levilactobacillus brevis] &gt;gb|MCE6022555.1| hypothetical protein [Levilactobacillus brevis]</Hit_def>
+  <Hit_accession>WP_233752107</Hit_accession>
+  <Hit_len>261</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>111322</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>2</Hsp_hit-from>
+      <Hsp_hit-to>19</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARII</Hsp_qseq>
+      <Hsp_hseq>MCEHYERLQNPISSFNLL</Hsp_hseq>
+      <Hsp_midline>MC  Y+RLQ P+SS  ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>49</Hit_num>
+  <Hit_id>gb|MBR1482852.1|</Hit_id>
+  <Hit_def>helix-turn-helix transcriptional regulator [Ruminococcus sp.]</Hit_def>
+  <Hit_accession>MBR1482852</Hit_accession>
+  <Hit_len>280</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>111900</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>185</Hsp_hit-from>
+      <Hsp_hit-to>202</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MCAMYDRLQYPVSSARII</Hsp_qseq>
+      <Hsp_hseq>LCSMYTRLNYPVTEDVLI</Hsp_hseq>
+      <Hsp_midline>+C+MY RL YPV+   +I</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>50</Hit_num>
+  <Hit_id>ref|WP_066905233.1|</Hit_id>
+  <Hit_def>hypothetical protein [Millisia brevis]</Hit_def>
+  <Hit_accession>WP_066905233</Hit_accession>
+  <Hit_len>146</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.8008</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>115878</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>121</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>12</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>2</Hsp_gaps>
+      <Hsp_align-len>20</Hsp_align-len>
+      <Hsp_qseq>MCAMY--DRLQYPVSSARII</Hsp_qseq>
+      <Hsp_hseq>MCALLPADRLDDPVASARIL</Hsp_hseq>
+      <Hsp_midline>MCA+   DRL  PV+SARI+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>460326648</Statistics_db-num>
+      <Statistics_db-len>175993717455</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.01</Statistics_kappa>
+      <Statistics_lambda>0.206</Statistics_lambda>
+      <Statistics_entropy>0.052</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

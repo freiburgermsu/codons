@@ -1,0 +1,1441 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_32089</BlastOutput_query-ID>
+  <BlastOutput_query-def>unnamed protein product</BlastOutput_query-def>
+  <BlastOutput_query-len>108</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_32089</Iteration_query-ID>
+  <Iteration_query-def>unnamed protein product</Iteration_query-def>
+  <Iteration_query-len>108</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gb|AHB33330.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AHB33330</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>215.312</Hsp_bit-score>
+      <Hsp_score>547</Hsp_score>
+      <Hsp_evalue>1.40157e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>107</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gb|AIZ74454.1|</Hit_id>
+  <Hit_def>orf5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AIZ74454</Hit_accession>
+  <Hit_len>156</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>212.231</Hsp_bit-score>
+      <Hsp_score>539</Hsp_score>
+      <Hsp_evalue>2.24532e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>50</Hsp_hit-from>
+      <Hsp_hit-to>156</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gb|AXN73419.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|AXN73463.1| ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AXN73419</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.772</Hsp_bit-score>
+      <Hsp_score>543</Hsp_score>
+      <Hsp_evalue>6.69967e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gb|AGH58722.1|</Hit_id>
+  <Hit_def>ORF5 protein [Human betacoronavirus 2c Jordan-N3/2012] &gt;gb|AHY21473.1| ORF5 protein [Human betacoronavirus 2c Jordan-N3/2012]</Hit_def>
+  <Hit_accession>AGH58722</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.772</Hsp_bit-score>
+      <Hsp_score>543</Hsp_score>
+      <Hsp_evalue>6.77336e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gb|AXG21669.1|</Hit_id>
+  <Hit_def>ORF5 protein [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AXG21669</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.772</Hsp_bit-score>
+      <Hsp_score>543</Hsp_score>
+      <Hsp_evalue>6.99935e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gb|AGO06005.1|</Hit_id>
+  <Hit_def>ORF5 protein, partial [Human betacoronavirus 2c EMC/2012]</Hit_def>
+  <Hit_accession>AGO06005</Hit_accession>
+  <Hit_len>206</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.001</Hsp_bit-score>
+      <Hsp_score>541</Hsp_score>
+      <Hsp_evalue>7.17188e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>100</Hsp_hit-from>
+      <Hsp_hit-to>206</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gb|QGW51465.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|QGW51485.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|QGW51565.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|QGW51575.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|QGW51625.1| ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>QGW51465</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.386</Hsp_bit-score>
+      <Hsp_score>542</Hsp_score>
+      <Hsp_evalue>7.31244e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gb|AZK15904.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AZK15904</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.386</Hsp_bit-score>
+      <Hsp_score>542</Hsp_score>
+      <Hsp_evalue>7.55641e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gb|ALD51908.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|ASU90036.1| NS5 protein [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>ALD51908</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.386</Hsp_bit-score>
+      <Hsp_score>542</Hsp_score>
+      <Hsp_evalue>7.98125e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gb|ALB08293.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|ALB08304.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|AML60274.1| ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>ALB08293</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.386</Hsp_bit-score>
+      <Hsp_score>542</Hsp_score>
+      <Hsp_evalue>8.33825e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gb|AHX00715.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|AHX00725.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|AHX00735.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|AHY22568.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|AIY60582.1| NS3d protein [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AHX00715</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.386</Hsp_bit-score>
+      <Hsp_score>542</Hsp_score>
+      <Hsp_evalue>8.33825e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gb|AHI48676.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AHI48676</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.386</Hsp_bit-score>
+      <Hsp_score>542</Hsp_score>
+      <Hsp_evalue>8.42997e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gb|AVN89378.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|AVN89389.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|AVN89400.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|AVN89411.1| ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AVN89378</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.386</Hsp_bit-score>
+      <Hsp_score>542</Hsp_score>
+      <Hsp_evalue>8.80705e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gb|QCI31484.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>QCI31484</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.386</Hsp_bit-score>
+      <Hsp_score>542</Hsp_score>
+      <Hsp_evalue>8.90393e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|YP_007188583.1|</Hit_id>
+  <Hit_def>NS3D protein [Betacoronavirus England 1] &gt;ref|YP_009047208.1| NS5 protein [Middle East respiratory syndrome-related coronavirus] &gt;sp|K9N7D2.1| RecName: Full=Non-structural protein ORF5; Short=ORF5 [Betacoronavirus England 1] &gt;gb|AFS88940.2| ORF5 [Human betacoronavirus 2c EMC/2012] &gt;gb|AGG22546.1| ORF5 [Human betacoronavirus 2c England-Qatar/2012] &gt;gb|AFY13311.1| NS3D protein [Betacoronavirus England 1] &gt;gb|AGN70933.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|AGN70955.1| ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>YP_007188583</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.386</Hsp_bit-score>
+      <Hsp_score>542</Hsp_score>
+      <Hsp_evalue>9.00187e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gb|QOU08629.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>QOU08629</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.386</Hsp_bit-score>
+      <Hsp_score>542</Hsp_score>
+      <Hsp_evalue>9.20099e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gb|QFN25367.1|</Hit_id>
+  <Hit_def>NS3D protein [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>QFN25367</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.386</Hsp_bit-score>
+      <Hsp_score>542</Hsp_score>
+      <Hsp_evalue>9.3022e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gb|ALW82735.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>ALW82735</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.386</Hsp_bit-score>
+      <Hsp_score>542</Hsp_score>
+      <Hsp_evalue>9.40452e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gb|ASU91080.1|</Hit_id>
+  <Hit_def>NS5 protein [Middle East respiratory syndrome-related coronavirus] &gt;gb|ASU91091.1| NS5 protein [Middle East respiratory syndrome-related coronavirus] &gt;gb|ASU91102.1| NS5 protein [Middle East respiratory syndrome-related coronavirus] &gt;gb|ASU91124.1| NS5 protein [Middle East respiratory syndrome-related coronavirus] &gt;gb|ASU91135.1| NS5 protein [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>ASU91080</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.386</Hsp_bit-score>
+      <Hsp_score>542</Hsp_score>
+      <Hsp_evalue>9.82519e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gb|AQZ41315.1|</Hit_id>
+  <Hit_def>NS5 protein [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AQZ41315</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.386</Hsp_bit-score>
+      <Hsp_score>542</Hsp_score>
+      <Hsp_evalue>9.82519e-68</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gb|AHI48543.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|AHI48565.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|AHI48686.1| ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AHI48543</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.001</Hsp_bit-score>
+      <Hsp_score>541</Hsp_score>
+      <Hsp_evalue>1.00425e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gb|AGV08496.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AGV08496</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.001</Hsp_bit-score>
+      <Hsp_score>541</Hsp_score>
+      <Hsp_evalue>1.00425e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gb|ALA49906.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>ALA49906</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.001</Hsp_bit-score>
+      <Hsp_score>541</Hsp_score>
+      <Hsp_evalue>1.04917e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>gb|ALA50071.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>ALA50071</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.001</Hsp_bit-score>
+      <Hsp_score>541</Hsp_score>
+      <Hsp_evalue>1.07238e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>gb|ALR69645.1|</Hit_id>
+  <Hit_def>orf5 protein [Middle East respiratory syndrome-related coronavirus] &gt;gb|ASU89948.1| NS5 protein [Middle East respiratory syndrome-related coronavirus] &gt;gb|ASU89970.1| NS5 protein [Middle East respiratory syndrome-related coronavirus] &gt;gb|ASU89981.1| NS5 protein [Middle East respiratory syndrome-related coronavirus] &gt;gb|ASU89992.1| NS5 protein [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>ALR69645</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.001</Hsp_bit-score>
+      <Hsp_score>541</Hsp_score>
+      <Hsp_evalue>1.07238e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>gb|AHL18095.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AHL18095</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.001</Hsp_bit-score>
+      <Hsp_score>541</Hsp_score>
+      <Hsp_evalue>1.10816e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gb|AVN89455.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AVN89455</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.001</Hsp_bit-score>
+      <Hsp_score>541</Hsp_score>
+      <Hsp_evalue>1.12035e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>gb|ATG84815.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>ATG84815</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.001</Hsp_bit-score>
+      <Hsp_score>541</Hsp_score>
+      <Hsp_evalue>1.14513e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>gb|QDI73614.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|QGV13492.1| NS5 protein [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>QDI73614</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.001</Hsp_bit-score>
+      <Hsp_score>541</Hsp_score>
+      <Hsp_evalue>1.26361e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>gb|AVN89337.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|AVN89347.1| ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AVN89337</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.001</Hsp_bit-score>
+      <Hsp_score>541</Hsp_score>
+      <Hsp_evalue>1.33465e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>gb|AMO03405.1|</Hit_id>
+  <Hit_def>nonstructural protein 3d [Middle East respiratory syndrome-related coronavirus] &gt;gb|AVN89284.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|AVN89295.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|AVN89306.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|AVN89317.1| ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AMO03405</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.001</Hsp_bit-score>
+      <Hsp_score>541</Hsp_score>
+      <Hsp_evalue>1.36418e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>gb|QGW51445.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>QGW51445</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.001</Hsp_bit-score>
+      <Hsp_score>541</Hsp_score>
+      <Hsp_evalue>1.39435e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMIPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGM+PVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>gb|QBM11740.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|QBM11752.1| ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>QBM11740</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.001</Hsp_bit-score>
+      <Hsp_score>541</Hsp_score>
+      <Hsp_evalue>1.39435e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>gb|AVN89356.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AVN89356</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>212.616</Hsp_bit-score>
+      <Hsp_score>540</Hsp_score>
+      <Hsp_evalue>1.4252e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>gb|AVN89422.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|AVN89433.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|AVN89444.1| ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AVN89422</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>212.616</Hsp_bit-score>
+      <Hsp_score>540</Hsp_score>
+      <Hsp_evalue>1.44087e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>gb|QGW51395.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>QGW51395</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>212.231</Hsp_bit-score>
+      <Hsp_score>539</Hsp_score>
+      <Hsp_evalue>2.43595e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>104</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMIPVIHTKPLFVRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGM+PVIHTKPLF+RNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>gb|ATG84705.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>ATG84705</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>211.846</Hsp_bit-score>
+      <Hsp_score>538</Hsp_score>
+      <Hsp_evalue>2.90189e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYIGRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYI RFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>gb|QJX19874.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|QJX19894.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|QJX19904.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|QJX19944.1| ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>QJX19874</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>211.46</Hsp_bit-score>
+      <Hsp_score>537</Hsp_score>
+      <Hsp_evalue>4.30236e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPSTRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVP+TRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>gb|AHI48554.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AHI48554</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>211.46</Hsp_bit-score>
+      <Hsp_score>537</Hsp_score>
+      <Hsp_evalue>4.34968e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPVTRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVP TRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>gb|QLD97959.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|QLD98002.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|QLD98013.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|QLD98024.1| ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|QLD98068.1| ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>QLD97959</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>211.46</Hsp_bit-score>
+      <Hsp_score>537</Hsp_score>
+      <Hsp_evalue>4.74747e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLYIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPL+IIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>gb|AKN24834.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AKN24834</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>211.46</Hsp_bit-score>
+      <Hsp_score>537</Hsp_score>
+      <Hsp_evalue>5.06951e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPAMRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPA RDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>gb|QGW51415.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|QGW51495.1| ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>QGW51415</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>211.46</Hsp_bit-score>
+      <Hsp_score>537</Hsp_score>
+      <Hsp_evalue>5.35451e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGIVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHG+VPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>gb|AKM76243.1|</Hit_id>
+  <Hit_def>NS3d protein [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AKM76243</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>211.075</Hsp_bit-score>
+      <Hsp_score>536</Hsp_score>
+      <Hsp_evalue>7.59868e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHFSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLH STYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>gb|AIY60522.1|</Hit_id>
+  <Hit_def>NS3d protein [Middle East respiratory syndrome-related coronavirus] &gt;gb|AIY60532.1| NS3d protein [Middle East respiratory syndrome-related coronavirus] &gt;gb|AIY60542.1| NS3d protein [Middle East respiratory syndrome-related coronavirus] &gt;gb|AIY60552.1| NS3d protein [Middle East respiratory syndrome-related coronavirus] &gt;gb|AIY60562.1| NS3d protein [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AIY60522</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>211.075</Hsp_bit-score>
+      <Hsp_score>536</Hsp_score>
+      <Hsp_evalue>7.59868e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>104</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSFLPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNS++ LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>gb|QAT98901.1|</Hit_id>
+  <Hit_def>orf5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|QAT98912.1| orf5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>QAT98901</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>211.075</Hsp_bit-score>
+      <Hsp_score>536</Hsp_score>
+      <Hsp_evalue>8.02584e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVTHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPV HTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>gb|ANI69893.1|</Hit_id>
+  <Hit_def>orf5 protein [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>ANI69893</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>210.69</Hsp_bit-score>
+      <Hsp_score>535</Hsp_score>
+      <Hsp_evalue>8.66451e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGTVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNG VSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>47</Hit_num>
+  <Hit_id>gb|AXP07349.1|</Hit_id>
+  <Hit_def>ORF5 [Middle East respiratory syndrome-related coronavirus] &gt;gb|AXP07359.1| ORF5 [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>AXP07349</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>210.69</Hsp_bit-score>
+      <Hsp_score>535</Hsp_score>
+      <Hsp_evalue>8.95356e-67</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>224</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVTHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPV HTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>48</Hit_num>
+  <Hit_id>gb|ALK80245.1|</Hit_id>
+  <Hit_def>NS4B-5 fusion protein [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>ALK80245</Hit_accession>
+  <Hit_len>472</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>213.772</Hsp_bit-score>
+      <Hsp_score>543</Hsp_score>
+      <Hsp_evalue>5.65222e-65</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>107</Hsp_query-to>
+      <Hsp_hit-from>366</Hsp_hit-from>
+      <Hsp_hit-to>472</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>107</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_qseq>
+      <Hsp_hseq>MLNSYIPLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_hseq>
+      <Hsp_midline>MLNSYI LFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSLIV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>49</Hit_num>
+  <Hit_id>gb|ATQ39397.1|</Hit_id>
+  <Hit_def>ORF5 protein [Middle East respiratory syndrome-related coronavirus]</Hit_def>
+  <Hit_accession>ATQ39397</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>195.667</Hsp_bit-score>
+      <Hsp_score>496</Hsp_score>
+      <Hsp_evalue>7.39304e-61</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>105</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>222</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>98</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSL</Hsp_qseq>
+      <Hsp_hseq>MLGSYIPLFDMRSHFIRVSTVSSHGMVPVTQTKPVFIRNFDQRCRCARCFYLHSSTYIECTYISRFSKVSLVSVADFSLNGNVSTVFVPATRDSVPLHIIAPSVL</Hsp_hseq>
+      <Hsp_midline>ML SYI LFDMRSHFIRVSTVSSHGMVPV  TKP+FIRNFDQRC C+RCFYLHSSTYIECTYISRFSK+SLVSV DFSLNGNVSTVFVPATRDSVPLHIIAPS L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>50</Hit_num>
+  <Hit_id>gb|AIG13100.1|</Hit_id>
+  <Hit_def>ORF5 protein [Coronavirus Neoromicia/PML-PHE1/RSA/2011]</Hit_def>
+  <Hit_accession>AIG13100</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>194.897</Hsp_bit-score>
+      <Hsp_score>494</Hsp_score>
+      <Hsp_evalue>1.44001e-60</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>105</Hsp_query-to>
+      <Hsp_hit-from>118</Hsp_hit-from>
+      <Hsp_hit-to>222</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>99</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>105</Hsp_align-len>
+      <Hsp_qseq>MLNSYISLFDMRSHFIRVSTVSSHGMVPVIHTKPLFIRNFDQRCSCSRCFYLHSSTYIECTYISRFSKISLVSVTDFSLNGNVSTVFVPATRDSVPLHIIAPSSL</Hsp_qseq>
+      <Hsp_hseq>MLSSYIPLFDMRSHFIRVSTVSSHGMVPVTQTKPVFIRNFDQRCRCARCFYLHSSTYIECTYINRFSKISLVSVADFSLNGNVSTVFVPATRDSVPLHIIAPSVL</Hsp_hseq>
+      <Hsp_midline>ML+SYI LFDMRSHFIRVSTVSSHGMVPV  TKP+FIRNFDQRC C+RCFYLHSSTYIECTYI+RFSKISLVSV DFSLNGNVSTVFVPATRDSVPLHIIAPS L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>460326648</Statistics_db-num>
+      <Statistics_db-len>175993717455</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

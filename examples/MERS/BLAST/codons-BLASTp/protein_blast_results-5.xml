@@ -1,0 +1,1479 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.13.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_28251</BlastOutput_query-ID>
+  <BlastOutput_query-def>unnamed protein product</BlastOutput_query-def>
+  <BlastOutput_query-len>19</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>200000</Parameters_expect>
+      <Parameters_gap-open>9</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_28251</Iteration_query-ID>
+  <Iteration_query-def>unnamed protein product</Iteration_query-def>
+  <Iteration_query-len>19</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>emb|VPJ38145.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VPJ38145</Hit_accession>
+  <Hit_len>260</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.9896</Hsp_bit-score>
+      <Hsp_score>55</Hsp_score>
+      <Hsp_evalue>49500.2</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>148</Hsp_hit-from>
+      <Hsp_hit-to>165</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>11</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLMHLLT</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK +H+LT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>emb|SNP54153.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>SNP54153</Hit_accession>
+  <Hit_len>188</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>56885.9</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>68</Hsp_hit-from>
+      <Hsp_hit-to>85</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>11</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLTHLLT</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK  H+LT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>emb|SVF02721.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>SVF02721</Hit_accession>
+  <Hit_len>195</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>57942.4</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>72</Hsp_hit-from>
+      <Hsp_hit-to>89</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>11</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLTHLLT</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK  H+LT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>emb|VOE10628.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VOE10628</Hit_accession>
+  <Hit_len>940</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>59468.7</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>52</Hsp_hit-from>
+      <Hsp_hit-to>69</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>11</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLTHLLT</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK  H+LT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>emb|SNN20891.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>SNN20891</Hit_accession>
+  <Hit_len>642</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>60874.7</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>72</Hsp_hit-from>
+      <Hsp_hit-to>89</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>11</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLTHLLT</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK  H+LT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>emb|SNN85815.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>SNN85815</Hit_accession>
+  <Hit_len>222</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>61218.7</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>70</Hsp_hit-from>
+      <Hsp_hit-to>87</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>11</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLTHLLT</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK  H+LT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>emb|CWE46645.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>CWE46645</Hit_accession>
+  <Hit_len>224</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>61411.2</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>72</Hsp_hit-from>
+      <Hsp_hit-to>89</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>11</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLTHLLT</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK  H+LT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>emb|VPH85549.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VPH85549</Hit_accession>
+  <Hit_len>460</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>62626.1</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>68</Hsp_hit-from>
+      <Hsp_hit-to>85</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>11</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLTHLLT</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK  H+LT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>ref|WP_214001793.1|</Hit_id>
+  <Hit_def>EpsG family protein [Acinetobacter variabilis]</Hit_def>
+  <Hit_accession>WP_214001793</Hit_accession>
+  <Hit_len>403</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>63465.2</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>103</Hsp_hit-from>
+      <Hsp_hit-to>119</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LFVFLTILYNLKSLHLL</Hsp_hseq>
+      <Hsp_midline>+F+ LT+LY LK++H+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gb|MBJ7737906.1|</Hit_id>
+  <Hit_def>hypothetical protein [Reyranella sp. OAS946]</Hit_def>
+  <Hit_accession>MBJ7737906</Hit_accession>
+  <Hit_len>331</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.6924</Hsp_bit-score>
+      <Hsp_score>54</Hsp_score>
+      <Hsp_evalue>64524.5</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>81</Hsp_hit-from>
+      <Hsp_hit-to>98</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>LIVRLQALYNTKAIHILT</Hsp_hseq>
+      <Hsp_midline>+ +RL  LY  KA+HILT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>ref|WP_145056905.1|</Hit_id>
+  <Hit_def>protein kinase [Lignipirellula cremea] &gt;gb|QDU98015.1| Serine/threonine-protein kinase PknB [Lignipirellula cremea]</Hit_def>
+  <Hit_accession>WP_145056905</Hit_accession>
+  <Hit_len>1129</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.3952</Hsp_bit-score>
+      <Hsp_score>53</Hsp_score>
+      <Hsp_evalue>75528.9</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>102</Hsp_hit-from>
+      <Hsp_hit-to>116</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>15</Hsp_align-len>
+      <Hsp_qseq>LRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LRLTLVYTLSALHFL</Hsp_hseq>
+      <Hsp_midline>LRLT++YTL A+H L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gb|TFY70173.1|</Hit_id>
+  <Hit_def>hypothetical protein EVG20_g2822 [Dentipellis fragilis]</Hit_def>
+  <Hit_accession>TFY70173</Hit_accession>
+  <Hit_len>1625</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>95515</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>611</Hsp_hit-from>
+      <Hsp_hit-to>628</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>12</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>MFLRIRVLDTADAVHIST</Hsp_hseq>
+      <Hsp_midline>MFLR+ VL T  AVHI T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gb|KAA1465935.1|</Hit_id>
+  <Hit_def>hypothetical protein DENSPDRAFT_830640 [Dentipellis sp. KUC8613]</Hit_def>
+  <Hit_accession>KAA1465935</Hit_accession>
+  <Hit_len>851</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>98069.4</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>609</Hsp_hit-from>
+      <Hsp_hit-to>626</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>12</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>MFLRIRVLDTADAVHIST</Hsp_hseq>
+      <Hsp_midline>MFLR+ VL T  AVHI T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>emb|CWH02660.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>CWH02660</Hit_accession>
+  <Hit_len>823</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>98251.9</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>103</Hsp_hit-from>
+      <Hsp_hit-to>120</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLRLMHLLT</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY L+ +H+LT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>ref|XP_009552223.1|</Hit_id>
+  <Hit_def>hypothetical protein HETIRDRAFT_461100 [Heterobasidion irregulare TC 32-1] &gt;gb|ETW75996.1| hypothetical protein HETIRDRAFT_461100 [Heterobasidion irregulare TC 32-1]</Hit_def>
+  <Hit_accession>XP_009552223</Hit_accession>
+  <Hit_len>714</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>99098.4</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>472</Hsp_hit-from>
+      <Hsp_hit-to>489</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>12</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>MFLRIRVLDTADAVHIST</Hsp_hseq>
+      <Hsp_midline>MFLR+ VL T  AVHI T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gb|THH19606.1|</Hit_id>
+  <Hit_def>hypothetical protein EW146_g1597 [Bondarzewia mesenterica]</Hit_def>
+  <Hit_accession>THH19606</Hit_accession>
+  <Hit_len>711</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>99125.4</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>504</Hsp_hit-from>
+      <Hsp_hit-to>521</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>12</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>MFLRIRVLDTADAVHIST</Hsp_hseq>
+      <Hsp_midline>MFLR+ VL T  AVHI T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>ref|WP_135549210.1|</Hit_id>
+  <Hit_def>FAD-dependent oxidoreductase [Paenibacillus cymbidii]</Hit_def>
+  <Hit_accession>WP_135549210</Hit_accession>
+  <Hit_len>526</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>101383</Hsp_evalue>
+      <Hsp_query-from>4</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>127</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>12</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>15</Hsp_align-len>
+      <Hsp_qseq>RLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>RLTILYETKAVHVET</Hsp_hseq>
+      <Hsp_midline>RLT+LY  KAVH+ T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>ref|XP_044738712.1|</Hit_id>
+  <Hit_def>F-box only protein 33 [Chrysoperla carnea] &gt;ref|XP_044738713.1| F-box only protein 33 [Chrysoperla carnea]</Hit_def>
+  <Hit_accession>XP_044738712</Hit_accession>
+  <Hit_len>470</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>102415</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>284</Hsp_hit-from>
+      <Hsp_hit-to>299</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>16</Hsp_align-len>
+      <Hsp_qseq>FLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>FLRLTLIHAYEAIHIL</Hsp_hseq>
+      <Hsp_midline>FLRLT+++  +A+HIL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>ref|XP_007308730.1|</Hit_id>
+  <Hit_def>hypothetical protein STEHIDRAFT_65385 [Stereum hirsutum FP-91666 SS1] &gt;gb|EIM82166.1| hypothetical protein STEHIDRAFT_65385 [Stereum hirsutum FP-91666 SS1]</Hit_def>
+  <Hit_accession>XP_007308730</Hit_accession>
+  <Hit_len>349</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>105495</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>109</Hsp_hit-from>
+      <Hsp_hit-to>126</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>12</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>MFLRIRVLDTADAVHIST</Hsp_hseq>
+      <Hsp_midline>MFLR+ VL T  AVHI T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>emb|CVO42557.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae] &gt;emb|CWK71117.1| Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>CVO42557</Hit_accession>
+  <Hit_len>345</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>105602</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>103</Hsp_hit-from>
+      <Hsp_hit-to>120</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLRLMHLLT</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY L+ +H+LT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>ref|NP_507419.1|</Hit_id>
+  <Hit_def>Serpentine Receptor, class Z [Caenorhabditis elegans] &gt;emb|CAB04142.1| Serpentine Receptor, class Z [Caenorhabditis elegans]</Hit_def>
+  <Hit_accession>NP_507419</Hit_accession>
+  <Hit_len>331</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>105952</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>233</Hsp_hit-from>
+      <Hsp_hit-to>249</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>IFLQTMVVFTLKSIHIL</Hsp_hseq>
+      <Hsp_midline>+FL+  V++TLK++HIL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>emb|VPU36576.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VPU36576</Hit_accession>
+  <Hit_len>270</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>106188</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>8</Hsp_hit-from>
+      <Hsp_hit-to>25</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>LMLKLTHLYLLKLMHLLT</Hsp_hseq>
+      <Hsp_midline>+ L+LT LY LK +H+LT</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>106188</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>64</Hsp_hit-from>
+      <Hsp_hit-to>81</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>LMLKLTHLYLLKLMHLLT</Hsp_hseq>
+      <Hsp_midline>+ L+LT LY LK +H+LT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>ref|NP_507354.2|</Hit_id>
+  <Hit_def>Serpentine Receptor, class Z [Caenorhabditis elegans] &gt;emb|CAA16420.2| Serpentine Receptor, class Z [Caenorhabditis elegans]</Hit_def>
+  <Hit_accession>NP_507354</Hit_accession>
+  <Hit_len>309</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>22.098</Hsp_bit-score>
+      <Hsp_score>52</Hsp_score>
+      <Hsp_evalue>106365</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>231</Hsp_hit-from>
+      <Hsp_hit-to>247</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>IFLQTMVVFTLKSIHIL</Hsp_hseq>
+      <Hsp_midline>+FL+  V++TLK++HIL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>gb|KAF0121399.1|</Hit_id>
+  <Hit_def>two-component system OmpR family heavy metal sensor histidine kinase CusS, partial [bacterium]</Hit_def>
+  <Hit_accession>KAF0121399</Hit_accession>
+  <Hit_len>99</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>117131</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>25</Hsp_hit-from>
+      <Hsp_hit-to>39</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>11</Hsp_identity>
+      <Hsp_positive>12</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>15</Hsp_align-len>
+      <Hsp_qseq>LRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LRLTILYTLSAFGIL</Hsp_hseq>
+      <Hsp_midline>LRLT+LYTL A  IL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>emb|VLQ02022.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VLQ02022</Hit_accession>
+  <Hit_len>636</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.8008</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>127891</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>106</Hsp_hit-from>
+      <Hsp_hit-to>123</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>11</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLMHSLT</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK +H LT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>gb|MBR5069292.1|</Hit_id>
+  <Hit_def>AMP-binding protein [Bacteroidales bacterium]</Hit_def>
+  <Hit_accession>MBR5069292</Hit_accession>
+  <Hit_len>505</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.8008</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>130246</Hsp_evalue>
+      <Hsp_query-from>3</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>16</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>15</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>16</Hsp_align-len>
+      <Hsp_qseq>LRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>MRRSLLHTLKALHIIT</Hsp_hseq>
+      <Hsp_midline>+R ++L+TLKA+HI+T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gb|NNE07485.1|</Hit_id>
+  <Hit_def>serine hydrolase [Gemmatimonadetes bacterium]</Hit_def>
+  <Hit_accession>NNE07485</Hit_accession>
+  <Hit_len>124</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>131960</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>18</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>9</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>18</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>MFARLSIVYALMHSHVLT</Hsp_hseq>
+      <Hsp_midline>MF RL+++Y L   H+LT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>ref|XP_017887710.1|</Hit_id>
+  <Hit_def>growth hormone secretagogue receptor type 1-like isoform X1 [Ceratina calcarata]</Hit_def>
+  <Hit_accession>XP_017887710</Hit_accession>
+  <Hit_len>431</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.8008</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>132201</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>238</Hsp_hit-from>
+      <Hsp_hit-to>254</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>FLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>FLILVVLYTVIALHLMT</Hsp_hseq>
+      <Hsp_midline>FL L VLYT+ A+H++T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>ref|XP_017887711.1|</Hit_id>
+  <Hit_def>growth hormone secretagogue receptor type 1-like isoform X2 [Ceratina calcarata]</Hit_def>
+  <Hit_accession>XP_017887711</Hit_accession>
+  <Hit_len>421</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.8008</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>132514</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>228</Hsp_hit-from>
+      <Hsp_hit-to>244</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>FLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>FLILVVLYTVIALHLMT</Hsp_hseq>
+      <Hsp_midline>FL L VLYT+ A+H++T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>ref|XP_026673046.1|</Hit_id>
+  <Hit_def>growth hormone secretagogue receptor type 1-like isoform X4 [Ceratina calcarata]</Hit_def>
+  <Hit_accession>XP_026673046</Hit_accession>
+  <Hit_len>381</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.8008</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>133889</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>188</Hsp_hit-from>
+      <Hsp_hit-to>204</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>FLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>FLILVVLYTVIALHLMT</Hsp_hseq>
+      <Hsp_midline>FL L VLYT+ A+H++T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>ref|XP_017887713.1|</Hit_id>
+  <Hit_def>growth hormone secretagogue receptor type 1-like isoform X5 [Ceratina calcarata]</Hit_def>
+  <Hit_accession>XP_017887713</Hit_accession>
+  <Hit_len>344</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.8008</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>135258</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>18</Hsp_query-to>
+      <Hsp_hit-from>151</Hsp_hit-from>
+      <Hsp_hit-to>167</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>FLRLTVLYTLKAVHILT</Hsp_qseq>
+      <Hsp_hseq>FLILVVLYTVIALHLMT</Hsp_hseq>
+      <Hsp_midline>FL L VLYT+ A+H++T</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>ref|WP_009450712.1|</Hit_id>
+  <Hit_def>hypothetical protein [Nitratireductor indicus] &gt;gb|EKF41929.1| hypothetical protein NA8A_12690 [Nitratireductor indicus C115] &gt;emb|SFQ48105.1| hypothetical protein SAMN05216176_104191 [Nitratireductor indicus]</Hit_def>
+  <Hit_accession>WP_009450712</Hit_accession>
+  <Hit_len>334</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.8008</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>135612</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>16</Hsp_query-to>
+      <Hsp_hit-from>78</Hsp_hit-from>
+      <Hsp_hit-to>92</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>12</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>15</Hsp_align-len>
+      <Hsp_qseq>FLRLTVLYTLKAVHI</Hsp_qseq>
+      <Hsp_hseq>FLREYILYTVKAAHI</Hsp_hseq>
+      <Hsp_midline>FLR  +LYT+KA HI</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>gb|OGY79302.1|</Hit_id>
+  <Hit_def>hypothetical protein A3B74_00435 [Candidatus Kerfeldbacteria bacterium RIFCSPHIGHO2_02_FULL_42_14] &gt;gb|OGY81261.1| hypothetical protein A3E60_02305 [Candidatus Kerfeldbacteria bacterium RIFCSPHIGHO2_12_FULL_42_13] &gt;gb|OGY83536.1| hypothetical protein A3I91_02740 [Candidatus Kerfeldbacteria bacterium RIFCSPLOWO2_02_FULL_42_19] &gt;gb|OGY85779.1| hypothetical protein A3G01_03960 [Candidatus Kerfeldbacteria bacterium RIFCSPLOWO2_12_FULL_43_9]</Hit_def>
+  <Hit_accession>OGY79302</Hit_accession>
+  <Hit_len>296</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.8008</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>136585</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>276</Hsp_hit-from>
+      <Hsp_hit-to>292</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>IFLRTIVFYTLQKLHIL</Hsp_hseq>
+      <Hsp_midline>+FLR  V YTL+ +HIL</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>gb|KTF86727.1|</Hit_id>
+  <Hit_def>hypothetical protein cypCar_00019502 [Cyprinus carpio]</Hit_def>
+  <Hit_accession>KTF86727</Hit_accession>
+  <Hit_len>281</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.8008</Hsp_bit-score>
+      <Hsp_score>51</Hsp_score>
+      <Hsp_evalue>136642</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>172</Hsp_hit-from>
+      <Hsp_hit-to>188</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>8</Hsp_identity>
+      <Hsp_positive>14</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LFLRLSVIFTVNVIHTL</Hsp_hseq>
+      <Hsp_midline>+FLRL+V++T+  +H L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>emb|VOF54339.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VOF54339</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>142240</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>120</Hsp_hit-from>
+      <Hsp_hit-to>136</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLMHLL</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK +H+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>emb|VMO42145.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VMO42145</Hit_accession>
+  <Hit_len>1340</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>157716</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>1160</Hsp_hit-from>
+      <Hsp_hit-to>1176</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLMHLL</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK +H+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>emb|VPZ08222.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VPZ08222</Hit_accession>
+  <Hit_len>1086</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>158991</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>598</Hsp_hit-from>
+      <Hsp_hit-to>614</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLMHLL</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK +H+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>emb|VNW40773.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VNW40773</Hit_accession>
+  <Hit_len>178</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>159235</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>94</Hsp_hit-from>
+      <Hsp_hit-to>110</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLMHLL</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK +H+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>emb|VKU07237.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VKU07237</Hit_accession>
+  <Hit_len>1004</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>159540</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>338</Hsp_hit-from>
+      <Hsp_hit-to>354</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLMHLL</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK +H+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>emb|VQJ95782.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VQJ95782</Hit_accession>
+  <Hit_len>998</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>159583</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>240</Hsp_hit-from>
+      <Hsp_hit-to>256</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLMHLL</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK +H+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>emb|VLV94012.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VLV94012</Hit_accession>
+  <Hit_len>970</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>159794</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>220</Hsp_hit-from>
+      <Hsp_hit-to>236</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLMHLL</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK +H+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>emb|VMU42406.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VMU42406</Hit_accession>
+  <Hit_len>924</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>160169</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>364</Hsp_hit-from>
+      <Hsp_hit-to>380</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLMHLL</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK +H+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>emb|VNE55897.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VNE55897</Hit_accession>
+  <Hit_len>862</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>160737</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>404</Hsp_hit-from>
+      <Hsp_hit-to>420</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLMHLL</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK +H+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>emb|VJP77067.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VJP77067</Hit_accession>
+  <Hit_len>780</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>161628</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>220</Hsp_hit-from>
+      <Hsp_hit-to>236</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLMHLL</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK +H+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>emb|VRA71453.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VRA71453</Hit_accession>
+  <Hit_len>746</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>162054</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>178</Hsp_hit-from>
+      <Hsp_hit-to>194</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLMHLL</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK +H+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>gb|MBV9182340.1|</Hit_id>
+  <Hit_def>hypothetical protein [Acidobacteria bacterium]</Hit_def>
+  <Hit_accession>MBV9182340</Hit_accession>
+  <Hit_len>703</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>162653</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>14</Hsp_query-to>
+      <Hsp_hit-from>121</Hsp_hit-from>
+      <Hsp_hit-to>133</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>11</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>13</Hsp_align-len>
+      <Hsp_qseq>FLRLTVLYTLKAV</Hsp_qseq>
+      <Hsp_hseq>FLRLTILYTCSAV</Hsp_hseq>
+      <Hsp_midline>FLRLT+LYT  AV</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>47</Hit_num>
+  <Hit_id>emb|VSG89757.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VSG89757</Hit_accession>
+  <Hit_len>660</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>163329</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>480</Hsp_hit-from>
+      <Hsp_hit-to>496</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLMHLL</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK +H+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>48</Hit_num>
+  <Hit_id>emb|VSY43727.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VSY43727</Hit_accession>
+  <Hit_len>630</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>163856</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>378</Hsp_hit-from>
+      <Hsp_hit-to>394</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLMHLL</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK +H+L</Hsp_midline>
+    </Hsp>
+    <Hsp>
+      <Hsp_num>2</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>163856</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>410</Hsp_hit-from>
+      <Hsp_hit-to>426</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLMHLL</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK +H+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>49</Hit_num>
+  <Hit_id>emb|VSC88464.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VSC88464</Hit_accession>
+  <Hit_len>606</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>164315</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>554</Hsp_hit-from>
+      <Hsp_hit-to>570</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLMHLL</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK +H+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>50</Hit_num>
+  <Hit_id>emb|VNW42534.1|</Hit_id>
+  <Hit_def>Uncharacterised protein [Streptococcus pneumoniae]</Hit_def>
+  <Hit_accession>VNW42534</Hit_accession>
+  <Hit_len>582</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>21.5036</Hsp_bit-score>
+      <Hsp_score>50</Hsp_score>
+      <Hsp_evalue>164812</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>17</Hsp_query-to>
+      <Hsp_hit-from>418</Hsp_hit-from>
+      <Hsp_hit-to>434</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>10</Hsp_identity>
+      <Hsp_positive>13</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>17</Hsp_align-len>
+      <Hsp_qseq>MFLRLTVLYTLKAVHIL</Hsp_qseq>
+      <Hsp_hseq>LMLRLTHLYLLKLMHLL</Hsp_hseq>
+      <Hsp_midline>+ LRLT LY LK +H+L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>460326648</Statistics_db-num>
+      <Statistics_db-len>175993717455</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.01</Statistics_kappa>
+      <Statistics_lambda>0.206</Statistics_lambda>
+      <Statistics_entropy>0.052</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>

@@ -19,7 +19,7 @@ Translating, Transcribing, and Investigating Genetic Sequences and their corresp
    :target: https://pepy.tech/project/Codons
    :alt: Downloads
 
-The Codons module is a lightweight tool for 1) conducting transcription and translation of genetic sequences, either in a FASTA format or a string; 2) making and reading FASTA or multi-FASTA files; and 3) conducting BLAST searches of protein and nucleotide sequences. Example Notebooks of these features are offered in the "examples" directory of the Codons `GitHub repository <https://github.com/freiburgermsu/codons/tree/main/examples>`_.
+The Codons module is a lightweight tool for 1) conducting transcription and translation of genetic sequences, either from a FASTA format or a string; 2) making and reading FASTA or multi-FASTA files; and 3) conducting BLAST searches of protein and nucleotide sequences. Example Notebooks of these features are offered in the "examples" directory of the `Codons GitHub repository <https://github.com/freiburgermsu/codons/tree/main/examples>`_.
 
 
 
@@ -136,7 +136,7 @@ A protein sequence or a FASTA-formatted file of protein sequences is searched in
 
 **Returns**
 
-- *blast_results* `Bio.Blast.NCBIXML`: An API accessible format that facilitates investigating the acquired BLAST from the search content.
+- *cd.protein_blast_results* `list`: The BLAST search results for the passed proteins and nucleotides, respectively, which can be parsed by the `Bio.Blast.NCBIXM` function and API.
 
 
 ++++++++++++++++++++++++++++
@@ -157,7 +157,7 @@ A genetic sequence is translated into a FASTA-formatted sequence of amino acids 
 
 **Returns**
 
-- *blast_results* `Bio.Blast.NCBIXML`: An API accessible format that facilitates investigating the acquired BLAST from the search content.
+- *cd.nucleotide_blast_results* `list`: The BLAST search results for the passed proteins and nucleotides, respectively, which can be parsed by the `Bio.Blast.NCBIXM` function and API.
 
 ++++++++++++++++
 export()
@@ -185,7 +185,7 @@ The ``Codons`` object retains numerous components that are accessible to the use
 - *missed_codons* ``dict``: A collections of the codons that were parsed yet never matched with a ``codons_table`` key.
 - *paths* & *parameters* ``dict``: Collections of the paths and parameters are are defined for the simulation.
 - *export_path* ``str``: The complete export path for the ``Codons`` contents.
-- *protein_blast_results* & *nucleotide_blast_results* ``str``: The BLAST search results for the passed proteins and nucleotides, respectively.
+- *protein_blast_results* & *nucleotide_blast_results* ``list``: The BLAST search results for the passed proteins and nucleotides, respectively, which can be parsed by the `Bio.Blast.NCBIXM` function and API.
 
 Execution
 +++++++++++

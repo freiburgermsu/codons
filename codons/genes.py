@@ -144,8 +144,8 @@ class Codons():
                 if first:
                     first = False
                     continue
-                descriptions.append(line)
-                sequences.append(seq)
+                descriptions.append(str(line))
+                sequences.append(str(seq))
                 seq = ''
         if sequences == []:
             sequences.append(seq)
@@ -162,17 +162,10 @@ class Codons():
         if export_directory is None:
             export_directory = os.getcwd()
         elif not os.path.exists(export_directory):
-            raise ValueError('The provided directory does not exist')
+            os.mkdir(export_directory)
 
         tag = ''
-        if self.nucleotide_blast_results:
-            tag = 'BLASTn'
-        if self.protein_blast_results:
-            if tag == 'BLASTn':
-                tag = 'BLAST'
-            else:
-                tag = 'BLASTp'
-        elif self.genes != {}:
+        if self.genes != {}:
             tag = f'{len(self.genes)}_proteins'
         elif self.transcribed_sequence:
             tag = f'{self.transcription}'
@@ -364,7 +357,7 @@ class Codons():
                       description: str = 'Protein sequence description',  
                       fasta_path: str = None, # The path to a fasta file
                       fasta_link: str = None,  # the path to the fasta file
-                      export_name = None, 
+                      export_name = 'codons-BLASTp', 
                       export_directory = None
                       ):
         if sequence:
@@ -377,25 +370,31 @@ class Codons():
             sequences, descriptions, self.protein_fasta = self.read_fasta(fasta_link = fasta_link)
             
         # estimate the completion time
-        estimated_time = datetime.datetime.now()+datetime.timedelta(seconds = len(self.protein_fasta)/2)    # approximately 1/2 second per amino acid   
+        estimated_time = datetime.datetime.now()+datetime.timedelta(seconds = len(self.protein_fasta)*1.4)
         print(f'The database search for the parameterized protein(s) will complete circa {estimated_time}.')
         
         # acquire the BLAST results
+        self.export(export_name, export_directory)
+        self.paths['protein_blast_results'] = [os.path.join(self.export_path, 'protein_blast_results.xml')]
         for index, sequence in enumerate(sequences):
             short_query = False
             if len(sequence) < 30:
                 short_query = True
-            self.protein_blast_results.append(NCBIWWW.qblast('blastp', database, sequence, short_query = short_query))
+            if len(sequence) > 1000:
+                sequence = sequence[:1000]
+            protein_result = NCBIWWW.qblast('blastp', database, sequence, short_query = short_query)
+            self.protein_blast_results.append(protein_result)
+            result = protein_result.read()
+                        
+            # export this modular portion
+            export_path = self._paths('protein_blast_results.xml', self.export_path)
+            self.paths['protein_blast_results'].append(export_path)
+            with open(self.paths['protein_blast_results'][-1], 'w') as protein_data:
+                protein_data.write(result)
+                    
             print(f' \rCompleted searches: {index+1}/{len(sequences)}\t{datetime.datetime.now()}', end='')
-        
-        # export the content
-        self.protein_blast_results = '\n\n'.join(self.protein_blast_results)
-        self.export(export_name, export_directory) 
-        self.paths['protein_blast_results'] = os.path.join(self.export_path, 'protein_blast_results.xml')
-        with open(self.paths['protein_blast_results'], 'w') as protein_data:
-            protein_data.write(self.protein_blast_results.read())
-            
-        return NCBIXML.read(self.protein_blast_results)
+                    
+        return self.protein_blast_results
         
     def blast_nucleotide(self,
                          sequence: str = None,
@@ -403,7 +402,7 @@ class Codons():
                          description: str = 'Genetic sequence description',  # a description of the sequence
                          fasta_path: str = None, # The path to a fasta file
                          fasta_link: str = None,  # the path to the fasta file
-                         export_name = None, 
+                         export_name = 'codons-BLASTn', 
                          export_directory = None
                          ):
         self.nucleotide_blast_results = []
@@ -418,14 +417,12 @@ class Codons():
                         
         # estimate the completion time
         estimated_length = len(self.gene_fasta)/2
-        estimated_time = datetime.datetime.now()+datetime.timedelta(seconds = estimated_length)    # approximately 1 second per nucleic acid
-        print(f'The database search for the parameterized genetic sequence will complete circa {estimated_time}, in {estimated_length/hour} hours.')
+        estimated_time = datetime.datetime.now()+datetime.timedelta(seconds = estimated_length/2)    # approximately 1/2 second per nucleic acid
+        print(f'The database search for the parameterized genetic sequence will complete circa {estimated_time}.')
         
         # acquire the BLAST results
-        if export_name is None:
-            export_name = 'codons-BLASTn'
         self.export(export_name, export_directory)
-        self.paths['nucleotide_blast_results'] = [os.path.join(self.export_path, 'nucleotide_blast_results.xml')]
+        self.paths['nucleotide_blast_results'] = []
         
         section_size = 4000
         for sequence in sequences:
@@ -433,26 +430,18 @@ class Codons():
             sequence_sections = [sequence[i*section_size:(i+1)*section_size] for i in range(0, sections)]
             for index, seq in enumerate(sequence_sections):
                 nucleotide_blast_result = NCBIWWW.qblast('blastn', database, seq)
+                self.nucleotide_blast_results.append(nucleotide_blast_result)
                 result = nucleotide_blast_result.read()
-                self.nucleotide_blast_results.append(result)
                 
                 # export this modular portion
-                export_path = self._paths('nucleotide_blast_results.xml', self.export_path)
+                export_path = self._paths(f'blastn_section{index}_results.xml', self.export_path)
                 self.paths['nucleotide_blast_results'].append(export_path)
-                with open(self.paths['nucleotide_blast_results'][-1], 'w') as nucleotide_data:
+                with open(self.paths['nucleotide_blast_results'][-1], 'w',encoding='utf8') as nucleotide_data:
                     nucleotide_data.write(result)
                 
-                print(f'Section {index+1}/{sequence_sections} is completed:\t{datetime.datetime.now()}')
-            
-        # remove the parceled information and export a new combined file
-        self.nucleotide_blast_results = '\n\n'.join(self.nucleotide_blast_results)
-        for xml in glob(os.path.join(self.export_path, '*.xml')):
-            os.remove(xml)
-            
-        with open(self.paths['nucleotide_blast_results'][0], 'w') as nucleotide_data:
-            nucleotide_data.write(self.nucleotide_blast_results)
-            
-        return NCBIXML.read(self.nucleotide_blast_results)
+                print(f'Section {index+1}/{len(sequence_sections)} is completed:\t{datetime.datetime.now()}')
+                        
+        return self.nucleotide_blast_results
                 
     def export(self, export_name = None, export_directory = None):
         # define the simulation_path
@@ -463,7 +452,7 @@ class Codons():
         # export the genetic and protein sequences
         if self.gene_fasta:
             self.paths['genetic_sequence'] = os.path.join(self.export_path, 'genetic_sequence.fasta')
-            with open(self.paths['genetic_sequence'], 'w') as genes:
+            with open(self.paths['genetic_sequence'], 'w',encoding='utf8') as genes:
                 genes.write(self.gene_fasta)
             
         if self.genes != {}:
