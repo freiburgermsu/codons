@@ -1,3 +1,4 @@
+from shutil import rmtree
 import codons
 import re, os
 
@@ -20,7 +21,7 @@ def test_init():
         assert type(string) is str
     for non in [cd.transcribed_sequence, cd.nucleotide_blast_results, cd.gene_fasta, cd.protein_fasta]:
         assert non is None
-    for lis in [cd.protein_blast_results, cd.parameters['start_codons']]:
+    for lis in [cd.protein_blast_results]:
         assert type(lis) is list
            
 def test_transcribe():
@@ -41,11 +42,11 @@ def test_translate():
     assert type(cd.genes) is dict
     for string in [cd.protein_fasta,]:
         assert type(string) is str
-    for lis in [cd.missed_codons]:
+    for lis in [cd.missed_codons, cd.parameters['start_codons']]:
         assert type(lis) is list
     for pro in [cd.genes[gene]['protein'] for gene in cd.genes]:
         assert type(pro['sequence']) is str
-        assert type(pro['mass']) is float
+        assert type(pro['mass']) is str
                                      
 def test_make_fasta():
     sequence, description, fasta = cd.read_fasta(fasta_path = mers_sequence_path)
@@ -76,24 +77,22 @@ def test_make_fasta():
             seq = seq.replace('*', '')
         sequences.append(seq)
     assert sequences == sequence
+    description = [description[0]+f' - {len(sequence[0]+"*")}']
     assert descriptions == description
 
             
-# ================== The BLAST functions fail with the small sequence, and larger sequences are not practical for a unit-test script ==================
-# def test_blast_protein():
-#     cd.translate(dna_sequence)
-#     print(cd.protein_fasta)
-#     cd.blast_protein()
-
-#     # assert qualities of the search
-#     assert os.path.exists(cd.paths['protein_blast_results'])
-#     rmtree(cd.paths['protein_blast_results'])
-                   
-# def test_blast_nucleotide():
-#     cd.translate(dna_sequence)
-#     cd.blast_nucleotide()
-
-#     # assert qualities of the search
-#     assert os.path.exists(cd.paths['nucleotide_blast_results'])
-#     rmtree(cd.paths['nucleotide_blast_results'])
-                   
+# ============== The search requires an excessive amount of time for a unit-test; nevertheless, the logic is provided ===================
+#def test_blast_protein():
+#    cd.translate(fasta_path = fasta_path)
+#    cd.blast_protein()
+#    
+#    # assert qualities of the search
+#    assert os.path.exists(cd.paths['protein_blast_results'])
+#    rmtree(cd.paths['protein_blast_results'])
+#                   
+#def test_blast_nucleotide():
+#    cd.blast_nucleotide(fasta_path = fasta_path)
+#
+#    # assert qualities of the search
+#    assert os.path.exists(cd.paths['nucleotide_blast_results'])
+#    rmtree(cd.paths['nucleotide_blast_results'])

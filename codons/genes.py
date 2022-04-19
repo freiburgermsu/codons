@@ -4,8 +4,9 @@ Created on Wed Jan 26 00:33:29 2022
 
 @author: Andrew Freiburger
 """
-from scipy.constants import hour
-from Bio.Blast import NCBIWWW, NCBIXML
+from Bio.Blast import NCBIWWW #, NCBIXML
+from deepdiff import DeepDiff
+from pprint import pprint
 from warnings import warn
 from chemw import Proteins
 #from pprint import pprint
@@ -13,6 +14,7 @@ from math import ceil
 from glob import glob
 import requests, io
 import datetime
+import difflib
 import json, os, re
 
 # allows case insensitive dictionary searches
@@ -64,7 +66,6 @@ class Codons():
     def __init__(self,
                  sequence: str = None,  # the genetic sequence can be optionally provided, for easy use in the other functions.
                  codons_table: str = 'standard', # the translation table for codons to amino acids
-                 start_codons: list = ["ATG", "AUG"], # the list of start codons that are accepted by the code
                  amino_acids_form: str = 'one_letter', # selects the scale of amino acid nomenclature
                  hyphenated: bool = None, # selects whether the printed protein will be hyphenated between the protein residues
                  verbose: bool = False,
@@ -88,20 +89,21 @@ class Codons():
         
         self.parameters = {}
         self.parameters['residue_delimiter'] = '-' 
-        self.parameters['start_codons'] = start_codons
         
         # refine the sequence into the FASTA format
         self.sequence = sequence
         
         # define the proper codons table
-        self.codons_table = json.load(open(self.paths['standard_table']))
+        with open(self.paths['standard_table']) as codons:
+            self.codons_table = json.load(codons)
         if codons_table != 'standard':
             self._convert_codon_tables(codons_table)    
         self.codons_table = CaseInsensitiveDict(self.codons_table)
         
         # define the amino acid nomenclature
         if amino_acids_form != 'full_name':
-            self.amino_acid_synonyms = json.load(open(self.paths['amino_acid_synonyms']))
+            with open(self.paths['amino_acid_synonyms']) as aas:
+                self.amino_acid_synonyms = json.load(aas)
             for codon in self.codons_table:
                 amino_acid = self.codons_table[codon] 
                 if amino_acid not in ['stop', 'start']:
@@ -113,7 +115,8 @@ class Codons():
     
     def _convert_codon_tables(self,codons_table):
         # convert the standard table into the desired table
-        self.changed_codons = json.load(open(self.paths['changed_codons']))
+        with open(self.paths['changed_codons']) as new_codons:
+            self.changed_codons = json.load(new_codons)
         if codons_table not in self.changed_codons:
             raise IndexError(f'The {codons_table} parameter is not presently supported by the options: {list(self.changed_codons.keys())}. Edit the < changed_codons.json > file to offer the exchanges that you desire for your simulation.')
             
@@ -177,8 +180,8 @@ class Codons():
         file_extension = ''
         while os.path.exists(export_path):
             count += 1
-            if re.search('(\.[a-zA-Z]+$)', export_path):
-                file_extension = re.search('(\.[a-zA-Z]+$)', export_path).group()
+            if re.search(r'(\.[a-zA-Z]+$)', export_path):
+                file_extension = re.search(r'(\.[a-zA-Z]+$)', export_path).group()
                 export_path = re.sub(file_extension, '', export_path)
                 
             if not re.search('(-[0-9]+$)', export_path):
@@ -205,14 +208,16 @@ class Codons():
         if type(sequences) is list:
             fasta_file = []
             for index, sequence in enumerate(sequences):
-                description = descriptions[index]
-                if not re.search('\*', sequence):
+                description = descriptions
+                if type(descriptions) is list:
+                    description = descriptions[index]
+                if not '*' in sequence:
                     sequence += '*'
-                fasta = '\n'.join(['>'+description, sequence])
+                fasta = '\n'.join(['>'+' - '.join([description, f'{len(sequence)}']), sequence])
                 fasta_file.append(fasta)
             fasta_file = '\n'.join(fasta_file)
         elif type(sequences) is str:
-            if not re.search('\*', sequences):
+            if not '*' in sequences:
                 sequences += '*'
             fasta_file = '\n'.join(['>'+descriptions, sequences])
         else:
@@ -223,10 +228,45 @@ class Codons():
                 out.write(fasta_file)
         
         return fasta_file
+    
+    def complement(self,
+                   sequence: str = None, # the genetic sequence for which the complemenentary strand will be determined
+                   dna: bool = True      # specifies whether the parameterized strand is DNA or RNA
+                   ):
+        complementary_strand = ''
+        for nuc in sequence:
+            if nuc == 'a':
+                if dna:
+                    complementary_strand += 't'
+                else:
+                    complementary_strand += 'u'
+            elif nuc == 'A':
+                if dna:
+                    complementary_strand += 'T'
+                else:
+                    complementary_strand += 'U'
+            if nuc == 't':
+                complementary_strand += 'a'
+            elif nuc == 'T':
+                complementary_strand += 'A'
+            if nuc == 'u':
+                complementary_strand += 'a'
+            elif nuc == 'U':
+                complementary_strand += 'A'
+            if nuc == 'c':
+                complementary_strand += 'g'
+            elif nuc == 'C':
+                complementary_strand += 'G'
+            if nuc == 'g':
+                complementary_strand += 'c'
+            elif nuc == 'G':
+                complementary_strand += 'c'
+                
+        return complementary_strand
             
     def transcribe(self,
-                   sequence: str = None, # the genomic code as a string
-                   description: str = '',  # a description of the sequence
+                   sequence: str = None,    # the genomic code as a string
+                   description: str = '',   # a description of the sequence
                    fasta_path: str = None,  # the path to the fasta file
                    fasta_link: str = None,  # the path to the fasta file
                    ):
@@ -270,20 +310,85 @@ class Codons():
         self.transcribed_fasta = self.make_fasta(self.transcribed_sequence, description)
         return self.transcribed_sequence
     
-    def _find_start(self,i):
+    def find_start(self,i, sequence):
         starts = '(?=' + '|'.join(self.parameters['start_codons']) + ')'            
         codon = ''
         while not re.search(starts, codon, flags=re.IGNORECASE) and i < len(self.sequence):
             codon = self.sequence[i:i+3]
             i += 1
-        i -= 1
+        if re.search('[a-z]{3}', codon, flags=re.IGNORECASE):
+            self.amino_acids = [self.codons_table[codon]]
+        i += 2
         return i
         
     def translate(self,
                  sequence: str = None, # the genomic code as a string
                  fasta_path: str = None,  # the path to the fasta file
                  fasta_link: str = None,  # the path to the fasta file
+                 organism: str = 'bacteria', # specifies the organism whose genome is being translated
+                 start_codons: list = None, # the list of start codons that are accepted by the code
+                 all_possible_proteins: bool = False, # generates all possible proteins from a given genetic sequence
+                 open_reading_frames: bool = True,  # translate each of the three possible open reading frames for a specified sequence
+                 filter_protein_size: int = 30, # the smallest peptide size that will still be included in the set of translated proteins
+                 sense_strand_translation: bool = False # specifies whether the sense strand, complementary to the parameterzied sequence, will be translated as well
                  ):
+        def end_protein(start_i,end_i, loop, gene, codons):
+            protein = self.parameters['residue_delimiter'].join(self.amino_acids)
+            mass = self.protein_mass.mass(protein)
+            
+            strand = '+' if loop <= 3 else '-'
+            if loop > 3:
+                loop -= 3
+            description = ' - '.join(['Protein', f'{len(self.amino_acids)}_residues', f'{mass}_amu', f'{start_i}-{end_i} bp', f'({strand}{loop}) ORF'])
+            fasta_file = self.make_fasta(protein, description)
+            self.genes[gene] = {}
+            self.genes[gene]['protein'] = {
+                    'sequence': protein,
+                    'mass': mass
+            }
+            self.genes[gene]['codons'] = codons
+            self.protein_fasta.append(fasta_file)
+            
+        def chemical_translation(i, start_i, loop):
+            codons = []                
+            codon = ''
+            gene = ''
+            for nuc in sequence[start_i:]:
+                i += 1
+                gene += nuc
+                codon += nuc
+                if len(codon) == 3:
+                    codons.append(codon)
+                    if codon not in self.codons_table:
+                        self.missed_codons.append(codon)
+                    else:
+                        amino_acid = self.codons_table[codon]
+                        if amino_acid == 'stop':
+                            if len(self.amino_acids) >= filter_protein_size:
+                                end_protein(start_i, i, loop, gene, codons)
+                            break
+                        else:
+                            self.amino_acids.append(amino_acid)
+                            if self.verbose:
+                                print(codon, '\t', amino_acid)
+                    codon = ''
+                elif i+2 >= len(sequence):
+                    if len(self.amino_acids) >= filter_protein_size:
+                        end_protein(start_i, i, loop, gene, codons)
+                    self.amino_acids = None
+                    break
+            return i
+        
+        # establish the conditions
+        self.parameters['start_codons'] = start_codons
+        if start_codons == None:
+            if organism == 'bacteria':
+                self.parameters['start_codons'] = ['ATG', 'AUG', 'GTG', "GUG"]
+            elif organism == 'virus':
+                self.parameters['start_codons'] = ['ATG', 'AUG']
+            else:
+                warn('ERROR: The organism type must be either bacteria or virus')
+                
         if sequence:
             self.sequence = sequence
             self.gene_fasta = self.make_fasta(self.sequence, ' - '.join(['Genetic_sequence', f'{len(self.sequence)}_bps']))
@@ -294,55 +399,42 @@ class Codons():
             sequences, descriptiosn, self.gene_fasta = self.read_fasta(fasta_link = fasta_link)
             print(sequences)
             self.sequence = sequences[0]
-            
-        self.protein_fasta = []
-        self.missed_codons = []
-        amino_acids = None
+
         self.sequence = re.sub('([^atucg])', '', self.sequence, flags = re.IGNORECASE)
+        sequences = [self.sequence]
+        if open_reading_frames:
+            sequences = [self.sequence, self.sequence[1:], self.sequence[2:]]  
+        if sense_strand_translation:
+            self.complementary_sequence = self.complement(self.sequence)
+            sequences.append(self.complementary_sequence)
+            if open_reading_frames:
+                sequences.extend([self.complementary_sequence[1:], self.complementary_sequence[2:]])
         
-        i = 0
-        while i < len(self.sequence):
-            i = self._find_start(i)
-            if i > len(self.sequence)-10:
-                break
-            codons = []
-            amino_acids = []
-            
-            codon = ''
-            gene = ''
-            old_i = i
-            for nuc in self.sequence[old_i:]:
-                i += 1
-                gene += nuc
-                codon += nuc
-                if len(codon) == 3:
-                    codons.append(codon)
-                    if codon not in self.codons_table:
-                        self.missed_codons.append(codon)
-                    else:
-                        amino_acid = self.codons_table[codon]
-                        if amino_acid == 'stop' and type(amino_acids) is list:
-                            protein = self.parameters['residue_delimiter'].join(amino_acids)
-                            mass = self.protein_mass.mass(protein)
-                            
-                            self.genes[gene] = {}
-                            self.genes[gene]['protein'] = {
-                                    'sequence': protein,
-                                    'mass': mass
-                            }
-                            
-                            description = ' - '.join(['Protein', f'{len(amino_acids)}_residues', f'{mass}_amu'])
-                            fasta_file = self.make_fasta(protein, description)
-                            self.protein_fasta.append(fasta_file)
-                            amino_acids = None
-                            break
-                        else:
-                            if type(amino_acids) is list and re.search('[a-z]+', amino_acid, flags = re.IGNORECASE):
-                                amino_acids.append(amino_acid)
-                                if self.verbose:
-                                    print(codon, '\t', amino_acid)
-                    codon = ''
-            self.genes[gene]['codons'] = codons
+        # translate the sequence
+        self.protein_fasta, self.missed_codons = [], []
+        loop = 0
+        for sequence in sequences: 
+            if not all_possible_proteins:
+                loop += 1
+            i = 0
+            while i < len(sequence):
+                i = start_i = self.find_start(i, sequence)
+                if i > len(sequence)-10:
+                    break
+                i = chemical_translation(i, start_i, loop)
+                if all_possible_proteins:
+                    i = start_i
+                    
+        if self.verbose:
+            if loop == 3:
+                sequence_proteins = dict(self.genes)
+                print('sequence_proteins', len(sequence_proteins))
+            elif loop > 3:
+                complement_proteins = DeepDiff(sequence_proteins, self.genes,ignore_order=True, report_repetition=True)
+                print(complement_proteins.pretty())
+#                    with open("complement_proteins.json", "w") as out_file:
+#                        json.dump(dict(complement_proteins), out_file, indent = 4)
+                print('complement_proteins', len(self.genes)-len(sequence_proteins))
                 
         self.protein_fasta = '\n'.join(self.protein_fasta)
         if self.printing:       
