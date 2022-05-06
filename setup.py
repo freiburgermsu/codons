@@ -12,7 +12,7 @@ setup(
 	'codons':['rosetta_stone/*'],
     'test': ['*']
   },
-  version = '0.0.9',
+  version = '0.0.10',
   license = 'MIT',
   description = "Translates and transcribes an arbitrary genetic sequence, generates FASTA-formatted files, and interfaces with BLAST databases to identify genetic and protein sequences.", 
   long_description = readme,
@@ -20,5 +20,5 @@ setup(
   author_email = 'andrewfreiburger@gmail.com',
   url = 'https://github.com/freiburgermsu/codons',   
   keywords = ['chemistry', 'biology', 'dogma', 'nucleic', 'acids', 'amino', 'translation', 'molecular', 'genetics', 'transcription', 'blast', 'codons'],
-  install_requires = ['scipy', 'Bio', 'chemw>0.2.0']
+  install_requires = ['scipy', 'Bio', 'chemw>0.2.0', 'deepdiff']
 )

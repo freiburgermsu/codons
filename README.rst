@@ -1,7 +1,7 @@
 Translating, Transcribing, and Investigating Genetic Sequences and their corresponding Proteins 
 --------------------------------------------------------------------------------------------------------
 
-|PyPI version| |Actions Status| |Downloads| |License|
+|PyPI version| |Actions Status| |docs| |Downloads| |License|
 
 .. |PyPI version| image:: https://img.shields.io/pypi/v/codons.svg?logo=PyPI&logoColor=brightgreen
    :target: https://pypi.org/project/codons/
@@ -18,6 +18,10 @@ Translating, Transcribing, and Investigating Genetic Sequences and their corresp
 .. |Downloads| image:: https://pepy.tech/badge/Codons
    :target: https://pepy.tech/project/Codons
    :alt: Downloads
+   
+.. |docs| image:: https://readthedocs.org/projects/codons/badge/?version=latest
+   :target: https://codons.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
 
 The Codons module is a lightweight tool for 1) conducting transcription and translation of genetic sequences, either from a FASTA format or a string; 2) making and reading FASTA or multi-FASTA files; and 3) conducting BLAST searches of protein and nucleotide sequences. Example Notebooks of these features are offered in the "examples" directory of the `Codons GitHub repository <https://github.com/freiburgermsu/codons/tree/main/examples>`_.
 
